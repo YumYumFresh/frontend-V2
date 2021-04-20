@@ -19,7 +19,7 @@ const navBar = () => {
             alt="React Bootstrap logo"
           />{" "}
           <h1 className="navBar__h1">
-          YumYum-Fresh
+          Yum-Yum Fresh
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

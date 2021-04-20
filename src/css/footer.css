@@ -1,0 +1,25 @@
+.footer__container{
+    background-color: rgb(26, 62, 95);
+    
+}
+
+.footer__img{
+    height: 5%;
+    width: 5%;
+
+}
+
+.footer__icons{
+    color: white;
+    margin: 3%;
+    font-size: 100%;
+}
+
+.footer__a{
+    margin-left: 70%;
+    color: white;
+}
+
+.footer__text{
+    color: white;
+}
