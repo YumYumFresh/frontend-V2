@@ -2,8 +2,9 @@ import NavBar from "./components/navBar";
 //import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import Tab from "./components/tab"
+import Card from "./components/card";
 
 function App() {
   return (
@@ -21,18 +22,12 @@ function App() {
             lg={6}
             style={{
               border: "5px solid red",
-              padding: "20%",
+              padding: "5%",
             }}
             >
             {" "}
-            <p
-            className="animate__animated animate__flipInY"
-            >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            aspernatur et alias sed nisi aliquam iusto distinctio dolores enim
-            inventore mollitia cupiditate? Nulla ipsam, quod nihil ea soluta
-            consectetur beatae!
-            </p>
+            
+           <Card/>
           </Col>
           <Col
             xs={6}
