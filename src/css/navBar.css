@@ -1,16 +1,16 @@
-.navBar__container{
-    
+.navBar__container {
+ background-color: #5E565A;
 }
 
-#navBar__img{
-    object-fit: contain;
+#navBar__img {
+  object-fit: contain;
 }
 
-.navbar__header{
-
+.navbar__header {
 }
 
-.navBar__h1{
-   color: white;
-   display: inline ;
+.navBar__h1 {
+  color: white;
+  display: inline;
 }
+

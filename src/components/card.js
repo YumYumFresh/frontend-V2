@@ -5,7 +5,6 @@ import Row from "react-bootstrap/esm/Row";
 import Fruits from "../images/fruit.PNG";
 import Modals from "./Modals";
 
-
 const card = () => {
   return (
     <div>
@@ -19,7 +18,8 @@ const card = () => {
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <Modals/>
+                  <br/>
+                  <Modals />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -34,7 +34,8 @@ const card = () => {
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <Modals/>
+                  <br/>
+                  <Modals />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -49,7 +50,8 @@ const card = () => {
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <Modals/>
+                  <br/>
+                  <Modals />
                 </Card.Text>
               </Card.Body>
             </Card>

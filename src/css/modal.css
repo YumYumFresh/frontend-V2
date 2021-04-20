@@ -1,0 +1,13 @@
+.modal__button{
+    background-color: #C6E0FF;
+    color: black;
+    border: none;
+}
+.modal__button:active{
+    color: black;
+    background-color: #C6E0FF;
+}
+.modal__button:hover{
+    color: black;
+    background-color: #C6E0FF;
+}

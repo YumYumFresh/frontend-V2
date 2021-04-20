@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 //import NavDropdown from "react-bootstrap/NavDropdown";
-import Fruits from "../images/fruit.PNG"
-import '../css/navBar.css'
+import Fruits from "../images/fruit.PNG";
+import "../css/navBar.css";
 
 const navBar = () => {
   return (
     <div>
-      <Navbar className="navBar__container" bg="dark" expand="lg">
+      <Navbar className="navBar__container" expand="lg">
         <Navbar.Brand className="navBar__header" href="#home">
           <img
             src={Fruits}
@@ -18,9 +18,7 @@ const navBar = () => {
             className=""
             alt="React Bootstrap logo"
           />{" "}
-          <h1 className="navBar__h1">
-          Yum-Yum Fresh
-          </h1>
+          <h1 className="navBar__h1">Yum-Yum Fresh</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
