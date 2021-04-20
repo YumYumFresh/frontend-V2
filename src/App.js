@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import { Switch, Route} from "react-router-dom";
 import Tab from "./components/tab"
 import Card from "./components/card";
+import Header from "./components/header"
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             }}
             >
             {" "}
-            
+            <Header/>
            <Card/>
           </Col>
           <Col
