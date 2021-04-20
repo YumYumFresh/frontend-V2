@@ -1,5 +1,6 @@
 .footer__container {
   background-color: #5E565A;
+  box-shadow: 5px -5px 40px 1px grey;
 }
 
 .footer__img {

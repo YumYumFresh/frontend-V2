@@ -1,5 +1,6 @@
 .navBar__container {
  background-color: #5E565A;
+ box-shadow: 10px 10px 30px 5px grey;
 }
 
 #navBar__img {
@@ -7,6 +8,7 @@
 }
 
 .navbar__header {
+
 }
 
 .navBar__h1 {
