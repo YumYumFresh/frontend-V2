@@ -16,8 +16,13 @@
 .footer__a {
   margin-left: 70%;
   color: white;
+  font-family: Dancing Script;
 }
 
 .footer__text {
   color: white;
+}
+
+.footer__fontLogo{
+  font-family: Dancing Script;
 }

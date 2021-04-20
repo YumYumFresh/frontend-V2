@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer__container">
       <Navbar expand="lg" variant="dark">
         <img className="footer__img" src={Fruit} alt="logo" />
-        <Navbar.Brand href="/">
+        <Navbar.Brand className="footer__fontLogo" href="/">
           Yum-Yum Fresh
           <AiOutlineFacebook className="footer__icons" />
           <AiOutlineInstagram className="footer__icons" />
