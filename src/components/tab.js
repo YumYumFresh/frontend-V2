@@ -12,21 +12,21 @@ const tab = () => {
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} lg={2}>
-            <Nav variant="pills" className="flex-column">
+            <Nav className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="first">Home</Nav.Link>
+                <Nav.Link  className="tab__link" eventKey="first">Home</Nav.Link>
               </Nav.Item>
               <hr className="tab__hr" />
               <Nav.Item>
-                <Nav.Link eventKey="second">Change State</Nav.Link>
+                <Nav.Link  className="tab__link" eventKey="second">Change State</Nav.Link>
               </Nav.Item>
               <hr className="tab__hr" />
               <Nav.Item>
-                <Nav.Link eventKey="third">Change Month</Nav.Link>
+                <Nav.Link  className="tab__link" eventKey="third">Change Month</Nav.Link>
               </Nav.Item>
               <hr className="tab__hr" />
               <Nav.Item>
-                <Nav.Link eventKey="fourth">Farmers Market</Nav.Link>
+                <Nav.Link  className="tab__link" eventKey="fourth">Farmers Market</Nav.Link>
               </Nav.Item>
               <hr className="tab__hr" />
             </Nav>

@@ -4,5 +4,20 @@
 .tab__hr{
     border: 1px solid #C6E0FF;
     width:100%;
-    
+}
+
+.tab__link{
+    background-color: #52154eff;
+    color: white;
+    border-radius: 20px;
+}
+/* 
+.tab__link:active{
+    color: black;
+    background-color: #C6E0FF;
+} */
+.tab__link:hover{
+    color: #52154eff;
+    background-color: white;
+    border: 1px solid grey;
 }
