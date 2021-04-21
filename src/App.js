@@ -16,7 +16,6 @@ function App() {
         <Route path="/season" render="" />
         <Route path="/state" render="" />
       </Switch>
-
       <NavBar />
       <div className="app__content">
         <Header />
