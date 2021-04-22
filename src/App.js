@@ -1,7 +1,5 @@
 import NavBar from "./components/navBar";
 //import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { Switch, Route } from "react-router-dom";
 import Tab from "./components/tab";
 import "./css/App.css"

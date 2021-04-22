@@ -1,5 +1,13 @@
 .map__link {
   background-color: #52154eff;
   color: white;
-  border-radius: 5px;
+  border-radius: 20%;
+  /* padding: 1%;
+  margin: 4%; */
+
+}
+
+.marketCard__a{
+  position: absolute;
+  margin-left: 89%;
 }
