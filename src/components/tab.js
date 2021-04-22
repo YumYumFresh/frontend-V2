@@ -19,7 +19,7 @@ const tab = () => {
           <Col sm={3} lg={2}>
           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">☰ Menu</button>
           
-              <Nav id="demo" className="flex-column" class="collapse">
+              <Nav id="demo" className="flex-column" class="collapse show">
                 <Nav.Item>
                   <Nav.Link className="tab__link" eventKey="first">
                     Home
