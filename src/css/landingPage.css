@@ -1,0 +1,32 @@
+.landingPage__container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+.landingPage__img{
+    width: 60%;
+    height: 60%;
+    border-radius: 70%;
+    box-shadow: -10px 22px 30px 2px grey;
+}
+
+
+.landingPage__link{
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    margin-top: 200px;
+    margin-left: -200px;
+    padding: 1%;
+    background-color: cadetblue;
+    border-radius: 50%;
+    box-shadow: -5px 10px 20px 2px grey;
+    
+    
+}
+
+.landingPage__linklink{
+    color: black;
+}

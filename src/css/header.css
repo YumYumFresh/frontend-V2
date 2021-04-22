@@ -1,3 +1,17 @@
 .header__container{
-  margin-left: 30%;
+margin: 10%;
+
+}
+
+.header__img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.header__header{
+
+}
+
+.header__p{
+
 }

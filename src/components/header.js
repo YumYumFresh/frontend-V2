@@ -1,10 +1,38 @@
 import React from "react";
+import Col from "react-bootstrap/esm/Col";
+import Row from "react-bootstrap/esm/Row";
 import "../css/header.css";
+import Fruit from "../images/fruit.PNG";
 
 const header = () => {
   return (
     <div className="header__container">
-      <h1>YOUR RESULTS</h1>
+    <Row>
+      <Col xs={6} lg={2}>
+      <div>
+        <img src={Fruit} alt="logo" className="header__img" />
+      </div>
+      </Col>
+      <Col xs={6} lg={10}>
+      <div className="header__header">
+        <h1>Blurb/About Us</h1>
+      </div>
+      <div className="header__p">
+        <p>
+          {" "}
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+          perferendis ducimus aperiam odio qui sequi similique rerum omnis ipsam
+          eaque commodi autem ipsa in, dolore exercitationem reprehenderit sint
+          aut excepturi.
+          <hr/>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolore,
+          quibusdam officiis repudiandae molestiae rem voluptate quia architecto
+          officia iste perspiciatis quae porro nulla pariatur consequuntur! Vero
+          assumenda numquam fuga.
+        </p>
+      </div>
+      </Col>
+    </Row>
     </div>
   );
 };
