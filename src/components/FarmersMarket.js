@@ -11,11 +11,8 @@ const FarmersMarket = () => {
         "https://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=08827"
       )
       .then((res) => {
-        console.log(res);
         setMarkets(res.data.results);
-        console.log(markets);
       });
-    //   .then((json) => console.log(json));
   }, []);
 
   return (
