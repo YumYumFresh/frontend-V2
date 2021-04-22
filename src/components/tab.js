@@ -5,8 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Card from "../components/card";
-import FarmersMarket from './FarmersMarket'
+import FarmersMarket from "./FarmersMarket";
 import Modals from "./Modals";
+import Geolocation from "../components/Geolocation";
 
 const tab = () => {
   return (
@@ -44,6 +45,7 @@ const tab = () => {
           <Col sm={9}>
             <Tab.Content>
               <Tab.Pane eventKey="first">
+                <Geolocation />
                 <Card />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
@@ -51,7 +53,7 @@ const tab = () => {
                 elit. Pariatur voluptates possimus autem cumque dolor atque
                 commodi voluptatum assumenda adipisci culpa error omnis, ipsa
                 deserunt beatae deleniti! Quas possimus porro asperiores!
-                <br/>
+                <br />
                 <Modals />
               </Tab.Pane>
               <Tab.Pane eventKey="third">
@@ -59,11 +61,11 @@ const tab = () => {
                 elit. Nulla voluptatem maiores saepe amet! Ea consequatur
                 laborum ipsum, molestiae ex voluptas fugit ab veniam quo?
                 Distinctio corrupti modi dolorum quasi fugiat.
-                <br/>
+                <br />
                 <Modals />
               </Tab.Pane>
               <Tab.Pane eventKey="fourth">
-                <FarmersMarket/>
+                <FarmersMarket />
               </Tab.Pane>
             </Tab.Content>
           </Col>

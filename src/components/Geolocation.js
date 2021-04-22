@@ -10,6 +10,7 @@ const Geolocation = () => {
   useEffect(() => {
     const date = new Date();
     setMonth(date.getMonth());
+    showPosition();
   }, []);
 
   function showPosition() {
@@ -66,7 +67,6 @@ const Geolocation = () => {
         <li>month: {month}</li>
         <li>zip: {zipCode}</li>
       </ul>
-      <button onClick={showPosition}> to the moon</button>
     </div>
   );
 };
