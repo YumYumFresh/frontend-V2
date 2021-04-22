@@ -28,17 +28,17 @@ const MarketCard = ({ id, marketName}) => {
   return (
     <Card>
       <Card.Body>
+        <div className="marketCard__a">
+            <a href={marketLink} target="_blank" rel="noreferrer" className="marketCard__link">
+              Map It!
+            </a>
+        </div>
         <Card.Title>{marketName}
         </Card.Title>
         <Card.Text>
           <div>{marketAddress}</div>
           <div>{marketProducts}</div>
           <div>{marketSchedule}</div>
-        <div className="marketCard__a">
-            <a href={marketLink} target="_blank" rel="noreferrer" className="map__link">
-              Map It!
-            </a>
-        </div>
         </Card.Text>
       </Card.Body>
     </Card>

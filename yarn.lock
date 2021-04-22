@@ -6032,11 +6032,6 @@
   "resolved" "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz"
   "version" "1.9.1"
 
-"ipapi.co@^0.3.0":
-  "integrity" "sha512-a8XM1tmOKqUfMiI0inKznyxOXG5bVThHXL0gmBj/nvwiyh6b+FyGHBo+OWVJ2u+Xv5hsq+EhkwIBw4z85ZpU+A=="
-  "resolved" "https://registry.npmjs.org/ipapi.co/-/ipapi.co-0.3.0.tgz"
-  "version" "0.3.0"
-
 "is-absolute-url@^2.0.0":
   "integrity" "sha1-UFMN+4T8yap9vnhS6Do3uTufKqY="
   "resolved" "https://registry.npmjs.org/is-absolute-url/-/is-absolute-url-2.1.0.tgz"
