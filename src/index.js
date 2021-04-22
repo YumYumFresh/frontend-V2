@@ -9,7 +9,7 @@ import Router from './components/Router'
 
 ReactDOM.render(
   <BrowserRouter>
-  <Router />
+  <App />
   </BrowserRouter>,
 
   document.getElementById('root')

@@ -64,7 +64,7 @@ const Geolocation = () => {
       <ul>
         <li>state: {statess}</li>
         <li>month: {month}</li>
-        <li>zip code: {zipCode}</li>
+        <li>zip: {zipCode}</li>
       </ul>
       <button onClick={showPosition}> to the moon</button>
     </div>

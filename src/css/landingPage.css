@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -200px;
+    margin-top: -300px;
     margin-left: -200px;
 }
 .landingPage__img{
@@ -13,20 +13,28 @@
 }
 
 
-.landingPage__link{
+.landingPage__div{
     position: fixed;
     top: 50%;
     left: 48%;
-    margin-top: 200px;
-    margin-left: -200px;
-    padding: 1%;
-    background-color: cadetblue;
+    margin-top: -240px;
+    margin-left: -420px;
+    padding: 2%;
+    width: 200px;
+    background-color: #FEF8FA;
     border-radius: 50%;
+    font-family: ;
     box-shadow: -5px 10px 20px 2px grey;
+    
     
     
 }
 
-.landingPage__linklink{
+.landingPage__link{
     color: black;
+    text-decoration: none;
+}
+.landingPage__link:hover{
+    color: black;
+    text-decoration: none;
 }

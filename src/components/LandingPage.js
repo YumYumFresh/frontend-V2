@@ -12,9 +12,9 @@ const LandingPage = () => {
     <div className='landingPage__container'>
       <img src={Logo1} alt="logo" className='landingPage__img' />
     </div>
-      <div className='landingPage__link'>
+      <div className='landingPage__div'>
       <Link to="/yumyum" className="landingPage__linklink" >
-        to find produce in your location (yes we use your location){" "}
+        Click to find produce in your location and yes we use your location! {" "}
       </Link>
       </div>
       </>
