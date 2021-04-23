@@ -8,8 +8,8 @@ import Nav from "react-bootstrap/Nav";
 import FarmersMarket from "./FarmersMarket";
 import Modals from "./Modals";
 import StateModals from "./StateModals";
-import Geolocation from "../components/Geolocation";
-import Stub from "../components/stub";
+import Geolocation from "./Geolocation";
+import Stub from "./stub";
 
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
