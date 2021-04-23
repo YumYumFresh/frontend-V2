@@ -2,7 +2,7 @@ import axios from "axios";
 import Card from "../components/card";
 import React, { useEffect, useState } from "react";
 
-const Geolocation = () => {
+const Geolocation = (props) => {
   const [location, setLocation] = useState();
   const [statess, setStatess] = useState();
   const [zipCode, setZipCode] = useState();
@@ -74,7 +74,12 @@ const Geolocation = () => {
           <li>zip: {zipCode}</li>
         </ul>
       </div>
-      <Card statess={statess} month={month} />
+      <Card
+        statess={statess}
+        month={month}
+        stateIds={props.stateIds}
+        monthLookup={props.monthLookup}
+      />
     </>
   );
 };
