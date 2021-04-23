@@ -87,7 +87,9 @@ const AppTab = () => {
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} lg={2}>
-            <Nav className="flex-column">
+          <label for="menu-toggle">☰ Menu</label>
+          <input type="checkbox" id="menu-toggle"/>
+            <Nav id="menu" className="flex-column">
               <Nav.Item>
                 <Nav.Link className="tab__link" eventKey="first">
                   Home

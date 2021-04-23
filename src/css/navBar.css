@@ -1,8 +1,7 @@
 .navBar__container {
  background-color: #5E565A;
  box-shadow: 10px 10px 30px 5px grey;
- position: -webkit-sticky;
- position: sticky;
+ position: fixed;
   top: 0;
   width: 100%;
 }
