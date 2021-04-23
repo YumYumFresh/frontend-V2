@@ -11,10 +11,9 @@ const Geolocation = (props) => {
   useEffect(() => {
     const date = new Date();
     setMonth(date.getMonth());
-    sessionStorage.setItem("userMonth", month);
     showPosition();
   }, []);
-
+  
   function showPosition() {
     // Store the element where the page displays the result
     // If geolocation is available, try to get the visitor's position
@@ -25,23 +24,30 @@ const Geolocation = (props) => {
       setLocation("Sorry, your browser does not support HTML5 geolocation.");
     }
   }
-
+  
   function successCallback(position) {
     console.log(position);
     const long = position.coords.longitude;
     const lat = position.coords.latitude;
     const key = process.env.REACT_APP_API_KEY;
+    const date = new Date();
+    const realDate  = date.getMonth()
+    
+    
     axios
-      .get(
-        `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
+    .get(
+      `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
       )
       .then((res) => {
         setStatess(res.data.data[0].region);
         setZipCode(res.data.data[0].postal_code);
         setLocation("");
-        sessionStorage.setItem("userZipCode", zipCode);
-        sessionStorage.setItem("usersState", statess);
-        console.log(statess);
+        sessionStorage.setItem("userZipCode", res.data.data[0].postal_code);
+        //console.log("session storage zipcode" ,sessionStorage.getItem("userZipCode"));
+        sessionStorage.setItem("userMonth", realDate);
+        //console.log("session storage month" ,sessionStorage.getItem("userMonth"));
+        sessionStorage.setItem("usersState", res.data.data[0].region);
+        
       })
 
       .catch((error) => console.log(error));
