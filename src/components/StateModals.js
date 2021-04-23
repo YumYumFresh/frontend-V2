@@ -5,7 +5,24 @@ import Button from "react-bootstrap/Button";
 import "../css/modal.css";
 
 const StateModals = (props) => {
-  // const [modalShow, setModalShow] = useState(false);
+  const [stateSelect, setStateSelect] = useState("");
+  const stateIdsIndexes = Object.values(props.stateIds);
+  const stateIdsNames = Object.keys(props.stateIds);
+  let reverseStateIds = {};
+  for (let i = 0; i < stateIdsIndexes.length; i++) {
+    reverseStateIds[stateIdsIndexes[i]] = stateIdsNames[i];
+  }
+
+  function handleStateSelect(selection) {
+    sessionStorage.setItem("usersState", selection);
+    setStateSelect(selection);
+    console.log(selection);
+    console.log(
+      `The axios get should be:  http://localhost:3000/states/${selection}/produces?month=${sessionStorage.getItem(
+        "userMonth"
+      )}`
+    );
+  }
 
   function MyVerticallyCenteredModal(props) {
     return (
@@ -21,23 +38,16 @@ const StateModals = (props) => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Season info</h4>
+          <h4>Pick the State you'd like to check out produce for:</h4>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
-          <h4>Farmers market info</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
-          <h4>Produce info</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
+            {stateIdsIndexes.map((stateId) => (
+              <div
+                key={stateId}
+                onClick={() => handleStateSelect(reverseStateIds[stateId])}
+              >
+                {reverseStateIds[stateId]} clicky
+              </div>
+            ))}
           </p>
         </Modal.Body>
         <Modal.Footer>

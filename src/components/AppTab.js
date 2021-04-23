@@ -136,6 +136,7 @@ const AppTab = () => {
                 deserunt beatae deleniti! Quas possimus porro asperiores!
                 <br />
                 <StateModals
+                  stateIds={stateIds}
                   statessModalShow={statessModalShow}
                   setStatessModalShow={setStatessModalShow}
                 />
