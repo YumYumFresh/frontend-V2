@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import Fruits from "../images/fruit.PNG";
 
+const card = (props) => {
+  const monthLookup = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-const card = () => {
+  // useEffect(() => {
+  //   axios
+  //     .get(`http://localhost:55327/states/${props.statess}/produces?month={monthLookup[props.month]}`)
+  //     .then((res) => {
+  //       console.log(res);
+  //     });
+  // }, []);
+
   return (
     <div>
       <Row>
@@ -14,11 +36,11 @@ const card = () => {
             <Card>
               <Card.Img variant="top" src={Fruits} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Card Title{monthLookup[props.month]}</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <br/>
+                  <br />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -33,7 +55,7 @@ const card = () => {
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <br/>
+                  <br />
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -48,7 +70,7 @@ const card = () => {
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                  <br/>
+                  <br />
                 </Card.Text>
               </Card.Body>
             </Card>

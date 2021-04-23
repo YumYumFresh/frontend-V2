@@ -74,7 +74,7 @@ const Geolocation = () => {
           <li>zip: {zipCode}</li>
         </ul>
       </div>
-      <Card />
+      <Card statess={statess} month={month} />
     </>
   );
 };
