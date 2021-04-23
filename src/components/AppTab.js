@@ -7,13 +7,14 @@ import Nav from "react-bootstrap/Nav";
 // import Card from "../components/card";
 import FarmersMarket from "./FarmersMarket";
 import Modals from "./Modals";
+import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
 import Stub from "./stub";
 
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
-
+  const [monthsModalShow, setMonthsModalShow] = useState(false);
   const monthLookup = [
     "January",
     "February",
@@ -104,7 +105,11 @@ const AppTab = () => {
               </Nav.Item>
               <hr className="tab__hr" />
               <Nav.Item>
-                <Nav.Link className="tab__link" eventKey="third">
+                <Nav.Link
+                  className="tab__link"
+                  eventKey="third"
+                  onClick={() => setMonthsModalShow(true)}
+                >
                   Change Month
                 </Nav.Link>
               </Nav.Item>
@@ -141,7 +146,10 @@ const AppTab = () => {
                 laborum ipsum, molestiae ex voluptas fugit ab veniam quo?
                 Distinctio corrupti modi dolorum quasi fugiat.
                 <br />
-                <Modals />
+                <MonthsModals
+                  monthsModalShow={monthsModalShow}
+                  setMonthsModalShow={setMonthsModalShow}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="fourth">
                 <FarmersMarket />
