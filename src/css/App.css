@@ -6,9 +6,8 @@
 .app__content {
   margin: 2%;
   margin-bottom: 10%;
-  margin-top: 5%;
-  border: 5px solid red;
-  padding: 5%;
+  margin-top: 2%;
+  padding: 1%;
 }
 
 /* .App {
@@ -49,3 +48,4 @@
     transform: rotate(360deg);
   }
 } */
+

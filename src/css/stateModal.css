@@ -1,0 +1,13 @@
+.stateModal__mapDiv{
+    margin: 3%;
+    position: relative;
+    padding: 4%;
+    border: 2px solid black;
+    background-color: #ffaa27;
+    font-style: italic;
+    box-shadow: -2px 2px 5px 1px grey;
+}
+
+.stateModal__h4{
+    margin: 5%;
+}

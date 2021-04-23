@@ -1,22 +1,27 @@
+@import url("../fonts/WEB/stylesheet.css");
+
 .navBar__container {
- background-color: #5E565A;
- box-shadow: 10px 10px 30px 5px grey;
- position: fixed;
+  background-color: #ffaa27;
+  box-shadow: 10px 10px 30px 5px grey;
+  position: fixed;
   top: 0;
   width: 100%;
 }
 
 #navBar__img {
-  object-fit: contain;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
 }
 
 .navbar__header {
-
 }
 
 .navBar__h1 {
   color: white;
   display: inline;
-  font-family: Lobster;
+  font-family: "The Farmer Textured";
+  font-size: 100px;
+  margin: 5%;
 }
 

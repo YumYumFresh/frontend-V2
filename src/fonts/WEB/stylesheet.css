@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'The Farmer Textured';
+    src: url('TheFarmerTexturedRegular.woff2') format('woff2'),
+        url('TheFarmerTexturedRegular.woff') format('woff'),
+        url('TheFarmerTexturedRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Farmer Textured';
+    src: url('TheFarmerTexturedRounded.woff2') format('woff2'),
+        url('TheFarmerTexturedRounded.woff') format('woff'),
+        url('TheFarmerTexturedRounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Farmer Textured';
+    src: url('TheFarmerTexturedVintage.woff2') format('woff2'),
+        url('TheFarmerTexturedVintage.woff') format('woff'),
+        url('TheFarmerTexturedVintage.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

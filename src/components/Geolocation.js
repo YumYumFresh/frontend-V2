@@ -1,6 +1,7 @@
 import axios from "axios";
 import Card from "../components/card";
 import React, { useEffect, useState } from "react";
+import "../css/geolocation.css";
 
 const Geolocation = (props) => {
   const [location, setLocation] = useState();
@@ -11,7 +12,6 @@ const Geolocation = (props) => {
   useEffect(() => {
     const date = new Date();
     setMonth(date.getMonth());
-    sessionStorage.setItem("userMonth", month);
     showPosition();
   }, []);
 
@@ -31,6 +31,9 @@ const Geolocation = (props) => {
     const long = position.coords.longitude;
     const lat = position.coords.latitude;
     const key = process.env.REACT_APP_API_KEY;
+    const date = new Date();
+    const realDate = date.getMonth();
+
     axios
       .get(
         `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
@@ -39,9 +42,11 @@ const Geolocation = (props) => {
         setStatess(res.data.data[0].region);
         setZipCode(res.data.data[0].postal_code);
         setLocation("");
-        sessionStorage.setItem("userZipCode", zipCode);
-        sessionStorage.setItem("usersState", statess);
-        console.log(statess);
+        sessionStorage.setItem("userZipCode", res.data.data[0].postal_code);
+        //console.log("session storage zipcode" ,sessionStorage.getItem("userZipCode"));
+        sessionStorage.setItem("userMonth", realDate);
+        //console.log("session storage month" ,sessionStorage.getItem("userMonth"));
+        sessionStorage.setItem("usersState", res.data.data[0].region);
       })
 
       .catch((error) => console.log(error));
@@ -67,12 +72,21 @@ const Geolocation = (props) => {
 
   return (
     <>
-      <div>
+      <div className="geolocation__header">
         <h1>{location}</h1>
         <ul>
-          <li>state: {statess}</li>
-          <li>month: {month}</li>
-          <li>zip: {zipCode}</li>
+          <li>
+            {" "}
+            <h3> state: {statess}</h3>{" "}
+          </li>
+          <li>
+            {" "}
+            <h3> month: {month}</h3>{" "}
+          </li>
+          <li>
+            {" "}
+            <h3> zip: {zipCode}</h3>{" "}
+          </li>
         </ul>
       </div>
       <Card

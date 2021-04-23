@@ -1,3 +1,4 @@
+
 what we used for front end:
 -react
 -bootstrap
@@ -8,6 +9,12 @@ what we used for front end:
 things to get done:
 
 - fix <br> from all detail farmers market
-  -warning on useEfffect on market card
-- long and lat store them in "session" storage to do lookup on farmers market or "redux" for storage
+  -warning on useEffect on market card
 - take away hamburger menu
+- fix farmers market search input and button
+- auto fil farmers market input with zipcode
+- state modal five rows with 10
+
+backend url:
+http://localhost:3000/states/:name/produces?month=October&lookup_id=32
+
