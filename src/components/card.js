@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
-import Fruits from "../images/fruit.PNG";
+import Logo2 from "../images/fakeLogo1.png";
 
 const card = (props) => {
   // useEffect(() => {
@@ -19,7 +19,11 @@ const card = (props) => {
         <Col xs={6} lg={4}>
           <p className="animate__animated animate__flipInY">
             <Card>
-              <Card.Img variant="top" src={Fruits} />
+              <Card.Img
+                variant="top"
+                src={Logo2}
+                style={{ borderRadius: "50%" }}
+              />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
@@ -37,7 +41,11 @@ const card = (props) => {
         <Col xs={6} lg={4}>
           <p className="animate__animated animate__flipInY">
             <Card>
-              <Card.Img variant="top" src={Fruits} />
+              <Card.Img
+                variant="top"
+                src={Logo2}
+                style={{ borderRadius: "50%" }}
+              />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
@@ -52,7 +60,11 @@ const card = (props) => {
         <Col xs={6} lg={4}>
           <p className="animate__animated animate__flipInY">
             <Card>
-              <Card.Img variant="top" src={Fruits} />
+              <Card.Img
+                variant="top"
+                src={Logo2}
+                style={{ borderRadius: "50%" }}
+              />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>

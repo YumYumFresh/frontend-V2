@@ -1,8 +1,11 @@
-// import React, { useState } from "react";
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "../css/modal.css";
+import "../css/stateModal.css";
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
+import Container from "react-bootstrap/esm/Container";
 
 const StateModals = (props) => {
   const [stateSelect, setStateSelect] = useState("");
@@ -22,6 +25,7 @@ const StateModals = (props) => {
         "userMonth"
       )}`
     );
+    props.setStatessModalShow(false);
   }
 
   function MyVerticallyCenteredModal(props) {
@@ -34,21 +38,29 @@ const StateModals = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Produce Details
+            State Select
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <h4>Pick the State you'd like to check out produce for:</h4>
-          <p>
-            {stateIdsIndexes.map((stateId) => (
-              <div
-                key={stateId}
-                onClick={() => handleStateSelect(reverseStateIds[stateId])}
-              >
-                {reverseStateIds[stateId]} clicky
-              </div>
-            ))}
-          </p>
+        <Modal.Body className="show-grid">
+          <h4 className="stateModal__h4">
+            Pick the State you'd like to check out produce for:
+          </h4>
+
+          <Container>
+            <Row>
+              {stateIdsIndexes.map((stateId) => (
+                <Col xs={3} lg={3}>
+                  <div
+                    className="stateModal__mapDiv"
+                    key={stateId}
+                    onClick={() => handleStateSelect(reverseStateIds[stateId])}
+                  >
+                    {reverseStateIds[stateId]}
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
@@ -59,13 +71,6 @@ const StateModals = (props) => {
 
   return (
     <>
-      <Button
-        className="modal__button"
-        onClick={() => props.setStatessModalShow(true)}
-      >
-        More info
-      </Button>
-
       <MyVerticallyCenteredModal
         show={props.statessModalShow}
         onHide={() => props.setStatessModalShow(false)}

@@ -5,12 +5,13 @@ import Fruit from "../images/fruit.PNG";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
+import RealLogo from "../images/realLogo.png";
 
 const Footer = () => {
   return (
     <div className="footer__container">
       <Navbar expand="lg" variant="dark">
-        <img className="footer__img" src={Fruit} alt="logo" />
+        <img className="footer__img" src={RealLogo} alt="logo" />
         <Navbar.Brand className="footer__fontLogo" href="/">
           Yum-Yum Fresh
           <AiOutlineFacebook className="footer__icons" />
