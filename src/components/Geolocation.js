@@ -41,6 +41,7 @@ const Geolocation = (props) => {
         setLocation("");
         sessionStorage.setItem("userZipCode", zipCode);
         sessionStorage.setItem("usersState", statess);
+        console.log(statess);
       })
 
       .catch((error) => console.log(error));
