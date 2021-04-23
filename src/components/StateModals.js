@@ -1,9 +1,10 @@
+// import React, { useState } from "react";
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "../css/modal.css";
 
-const Modals = () => {
+const StateModals = (props) => {
   const [modalShow, setModalShow] = useState(false);
 
   function MyVerticallyCenteredModal(props) {
@@ -48,16 +49,19 @@ const Modals = () => {
 
   return (
     <>
-      <Button className="modal__button" onClick={() => setModalShow(true)}>
+      <Button
+        className="modal__button"
+        onClick={() => props.setStatessModalShow(true)}
+      >
         More info
       </Button>
 
       <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
+        show={props.statessModalShow}
+        onHide={() => props.setStatessModalShow(false)}
       />
     </>
   );
 };
 
-export default Modals;
+export default StateModals;

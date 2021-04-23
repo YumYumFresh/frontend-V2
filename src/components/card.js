@@ -5,24 +5,9 @@ import Row from "react-bootstrap/esm/Row";
 import Fruits from "../images/fruit.PNG";
 
 const card = (props) => {
-  const monthLookup = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
   // useEffect(() => {
   //   axios
-  //     .get(`http://localhost:55327/states/${props.statess}/produces?month={monthLookup[props.month]}`)
+  //     .get(`http://localhost:55327/states/${props.statess}/produces?month=${props.monthLookup[props.month]}`)
   //     .then((res) => {
   //       console.log(res);
   //     });
@@ -36,8 +21,11 @@ const card = (props) => {
             <Card>
               <Card.Img variant="top" src={Fruits} />
               <Card.Body>
-                <Card.Title>Card Title{monthLookup[props.month]}</Card.Title>
+                <Card.Title>Card Title</Card.Title>
                 <Card.Text>
+                  State is {props.statess} and state id is{" "}
+                  {props.stateIds[props.statess]} <br />
+                  and the month is {props.monthLookup[props.month]} <br />
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                   <br />

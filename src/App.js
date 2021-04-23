@@ -1,5 +1,5 @@
 import NavBar from "./components/navBar";
-import Tab from "./components/tab";
+import AppTab from "./components/tab";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import "./css/App.css";
@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <Header />
       <div className="app__content">
-        <Tab />
+        <AppTab />
       </div>
       <Footer />
     </div>
