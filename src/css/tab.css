@@ -23,3 +23,20 @@
     background-color: white;
     border: 1px solid grey;
 }
+
+#menu-toggle {
+    display: none;
+}
+
+#menu {
+    width: 190px;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-transition: all 0.3s ease;
+}
+
+#menu-toggle:checked + #menu {
+    max-height: 500px;
+}

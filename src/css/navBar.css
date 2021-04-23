@@ -3,8 +3,7 @@
 .navBar__container {
   background-color: #ffaa27;
   box-shadow: 10px 10px 30px 5px grey;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -25,3 +24,4 @@
   font-size: 100px;
   margin: 5%;
 }
+
