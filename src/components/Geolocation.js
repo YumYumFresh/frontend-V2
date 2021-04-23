@@ -1,4 +1,5 @@
 import axios from "axios";
+import Card from "../components/card";
 import React, { useEffect, useState } from "react";
 
 const Geolocation = () => {
@@ -36,6 +37,7 @@ const Geolocation = () => {
       .then((res) => {
         setStatess(res.data.data[0].region);
         setZipCode(res.data.data[0].postal_code);
+        setLocation("");
       })
 
       .catch((error) => console.log(error));
@@ -60,14 +62,17 @@ const Geolocation = () => {
   }
 
   return (
-    <div>
-      <h1>{location}</h1>
-      <ul>
-        <li>state: {statess}</li>
-        <li>month: {month}</li>
-        <li>zip: {zipCode}</li>
-      </ul>
-    </div>
+    <>
+      <div>
+        <h1>{location}</h1>
+        <ul>
+          <li>state: {statess}</li>
+          <li>month: {month}</li>
+          <li>zip: {zipCode}</li>
+        </ul>
+      </div>
+      <Card />
+    </>
   );
 };
 

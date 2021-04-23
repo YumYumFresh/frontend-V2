@@ -4,10 +4,11 @@ import "../css/tab.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-import Card from "../components/card";
+// import Card from "../components/card";
 import FarmersMarket from "./FarmersMarket";
 import Modals from "./Modals";
 import Geolocation from "../components/Geolocation";
+import Stub from "../components/stub";
 
 const tab = () => {
   return (
@@ -46,9 +47,10 @@ const tab = () => {
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <Geolocation />
-                <Card />
+                {/* <Card /> */}
               </Tab.Pane>
               <Tab.Pane eventKey="second">
+                <Stub />
                 change state, Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Pariatur voluptates possimus autem cumque dolor atque
                 commodi voluptatum assumenda adipisci culpa error omnis, ipsa
