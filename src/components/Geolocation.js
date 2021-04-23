@@ -11,6 +11,7 @@ const Geolocation = () => {
   useEffect(() => {
     const date = new Date();
     setMonth(date.getMonth());
+    sessionStorage.setItem("userMonth", month);
     showPosition();
   }, []);
 
@@ -38,6 +39,8 @@ const Geolocation = () => {
         setStatess(res.data.data[0].region);
         setZipCode(res.data.data[0].postal_code);
         setLocation("");
+        sessionStorage.setItem("userZipCode", zipCode);
+        sessionStorage.setItem("usersState", statess);
       })
 
       .catch((error) => console.log(error));
