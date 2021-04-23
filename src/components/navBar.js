@@ -18,12 +18,11 @@ const navBar = () => {
             className=""
             alt="React Bootstrap logo"
           />{" "}
-          <h1 className="navBar__h1" >Yum-Yum Fresh</h1>
+          <h1 className="navBar__h1">Yum Yum Fresh</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-          </Nav>
+          <Nav className="mr-auto"></Nav>
         </Navbar.Collapse>
       </Navbar>
     </div>

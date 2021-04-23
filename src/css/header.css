@@ -1,17 +1,17 @@
-.header__container{
-margin: 10%;
-
+.header__container {
+  margin: 5%;
 }
 
-.header__img{
+.header__img {
   width: 100%;
   object-fit: contain;
+  border-radius: 50%;
+  width: 100%;
+  height: 20%;
 }
 
-.header__header{
-
+.header__header {
 }
 
-.header__p{
-
+.header__p {
 }

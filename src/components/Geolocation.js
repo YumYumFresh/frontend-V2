@@ -1,6 +1,7 @@
 import axios from "axios";
 import Card from "../components/card";
 import React, { useEffect, useState } from "react";
+import "../css/geolocation.css";
 
 const Geolocation = (props) => {
   const [location, setLocation] = useState();
@@ -13,7 +14,7 @@ const Geolocation = (props) => {
     setMonth(date.getMonth());
     showPosition();
   }, []);
-  
+
   function showPosition() {
     // Store the element where the page displays the result
     // If geolocation is available, try to get the visitor's position
@@ -24,19 +25,18 @@ const Geolocation = (props) => {
       setLocation("Sorry, your browser does not support HTML5 geolocation.");
     }
   }
-  
+
   function successCallback(position) {
     console.log(position);
     const long = position.coords.longitude;
     const lat = position.coords.latitude;
     const key = process.env.REACT_APP_API_KEY;
     const date = new Date();
-    const realDate  = date.getMonth()
-    
-    
+    const realDate = date.getMonth();
+
     axios
-    .get(
-      `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
+      .get(
+        `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
       )
       .then((res) => {
         setStatess(res.data.data[0].region);
@@ -47,7 +47,6 @@ const Geolocation = (props) => {
         sessionStorage.setItem("userMonth", realDate);
         //console.log("session storage month" ,sessionStorage.getItem("userMonth"));
         sessionStorage.setItem("usersState", res.data.data[0].region);
-        
       })
 
       .catch((error) => console.log(error));
@@ -73,12 +72,21 @@ const Geolocation = (props) => {
 
   return (
     <>
-      <div>
+      <div className="geolocation__header">
         <h1>{location}</h1>
         <ul>
-          <li>state: {statess}</li>
-          <li>month: {month}</li>
-          <li>zip: {zipCode}</li>
+          <li>
+            {" "}
+            <h3> state: {statess}</h3>{" "}
+          </li>
+          <li>
+            {" "}
+            <h3> month: {month}</h3>{" "}
+          </li>
+          <li>
+            {" "}
+            <h3> zip: {zipCode}</h3>{" "}
+          </li>
         </ul>
       </div>
       <Card

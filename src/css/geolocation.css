@@ -1,0 +1,9 @@
+.geolocation__header {
+  margin: 3%;
+  margin-top: 0;
+  margin-left: 2%;
+  background-color: #ffaa27;
+  padding: 5%;
+  box-shadow: -10px 10px 30px 1px grey;
+  border-radius: 20px;
+}

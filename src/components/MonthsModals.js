@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "../css/modal.css";
-import '../css/monthModal.css'
+import "../css/monthModal.css";
 import Row from "react-bootstrap/esm/Row";
 import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col";
@@ -16,13 +16,13 @@ const MonthsModals = (props) => {
 
   const handleMonthSelect = (month) => {
     sessionStorage.setItem("month", month);
-    console.log(sessionStorage.getItem("month"))
+    console.log(sessionStorage.getItem("month"));
     console.log(
       `The axios get should be:  http://localhost:3000/states/${sessionStorage.getItem(
         "usersState"
       )}/produces?month=${month}`
     );
-    props.setMonthsModalShow(false)
+    props.setMonthsModalShow(false);
   };
 
   const monthLookup = props.monthLookup;
@@ -67,13 +67,6 @@ const MonthsModals = (props) => {
 
   return (
     <>
-      <Button
-        className="modal__button"
-        onClick={() => props.setMonthsModalShow(true)}
-      >
-        More info
-      </Button>
-
       <MyVerticallyCenteredModal
         show={props.monthsModalShow}
         onHide={() => props.setMonthsModalShow(false)}

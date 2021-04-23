@@ -5,11 +5,10 @@ import LandingPage from "./LandingPage";
 
 const Router = () => {
   return (
-
-      <Switch>
-        <Route path="/" exact render={LandingPage} />
-        <Route path="/yumyum" render={App} />
-      </Switch>
+    <Switch>
+      <Route path="/" exact render={LandingPage} />
+      <Route path="/yumyum" render={App} />
+    </Switch>
   );
 };
 
