@@ -9,6 +9,7 @@
 
 #navBar__img {
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .navbar__header {
@@ -18,6 +19,9 @@
 .navBar__h1 {
   color: white;
   display: inline;
-  font-family: Lobster;
+  @font-face {
+    font-family: 'TheFarmerTexturedRegular';
+    src: local('TheFarmerTexturedRegular'), url(../fonts/TTF/TheFarmerTexturedRegular.ttf) format('truetype');
+  }
 }
 

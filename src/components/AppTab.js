@@ -150,6 +150,7 @@ const AppTab = () => {
                 <MonthsModals
                   monthsModalShow={monthsModalShow}
                   setMonthsModalShow={setMonthsModalShow}
+                  monthLookup={monthLookup}
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="fourth">
