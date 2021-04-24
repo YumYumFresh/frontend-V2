@@ -15,7 +15,8 @@ const MonthsModals = (props) => {
   const [monthSelect, setMonthSelect] = useState();
 
   const handleMonthSelect = (month) => {
-    sessionStorage.setItem("month", month);
+    // sessionStorage.setItem("month", month);
+    sessionStorage.setItem("userMonth", props.monthLookup.indexOf(month));
     console.log(sessionStorage.getItem("month"));
     console.log(
       `The axios get should be:  http://localhost:3000/states/${sessionStorage.getItem(
@@ -76,4 +77,3 @@ const MonthsModals = (props) => {
 };
 
 export default MonthsModals;
-
