@@ -7,9 +7,9 @@ const FarmersMarket = () => {
   const [markets, setMarkets] = useState([]);
   const [zipcode, setZipcode] = useState("");
 
-  // useEffect(() => {
-
-  // }, []);
+  useEffect(() => {
+    setZipcode(sessionStorage.getItem("userZipCode"));
+  }, []);
 
   const handleChange = (e) => {
     setZipcode(e.target.value);
@@ -17,6 +17,7 @@ const FarmersMarket = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(zipcode);
     axios
       .get(
         "https://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=" +
@@ -33,8 +34,12 @@ const FarmersMarket = () => {
         <input
           type="text"
           value={zipcode}
-          //value={sessionStorage.getItem("userZipCode")}
-          placeholder="enter your zip"
+          // defaultValue={sessionStorage.getItem("userZipCode")}
+          placeholder={
+            sessionStorage.getItem("userZipCode")
+              ? sessionStorage.getItem("userZipCode")
+              : "enter your zip"
+          }
           onChange={handleChange}
           style={{ padding: "5%", width: "100%" }}
         />
@@ -54,4 +59,3 @@ const FarmersMarket = () => {
 };
 
 export default FarmersMarket;
-
