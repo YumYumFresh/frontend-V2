@@ -13,7 +13,7 @@ const Geolocation = (props) => {
     const date = new Date();
     setMonth(date.getMonth());
     showPosition();
-  }, []);
+  }, [props.reloadGeolocation]);
 
   function showPosition() {
     // Store the element where the page displays the result

@@ -15,6 +15,7 @@ import Stub from "./stub";
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
   const [monthsModalShow, setMonthsModalShow] = useState(false);
+  const [reloadGeolocation, setReloadGeolocation] = useState(false);
   const monthLookup = [
     "January",
     "February",
@@ -92,7 +93,15 @@ const AppTab = () => {
             <input type="checkbox" id="menu-toggle" />
             <Nav id="menu" className="flex-column">
               <Nav.Item>
-                <Nav.Link className="tab__link" eventKey="first">
+                <Nav.Link
+                  className="tab__link"
+                  eventKey="first"
+                  onClick={() => {
+                    reloadGeolocation
+                      ? setReloadGeolocation(false)
+                      : setReloadGeolocation(true);
+                  }}
+                >
                   Home
                 </Nav.Link>
               </Nav.Item>
@@ -128,7 +137,11 @@ const AppTab = () => {
           <Col sm={9}>
             <Tab.Content>
               <Tab.Pane eventKey="first">
-                <Geolocation monthLookup={monthLookup} stateIds={stateIds} />
+                <Geolocation
+                  reloadGeolocation={reloadGeolocation}
+                  monthLookup={monthLookup}
+                  stateIds={stateIds}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <br />
