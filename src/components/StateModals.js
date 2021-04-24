@@ -32,7 +32,7 @@ const StateModals = (props) => {
     return (
       <Modal
         {...props}
-        size="lg"
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -47,9 +47,13 @@ const StateModals = (props) => {
           </h4>
 
           <Container>
-            <Row>
+            <Row xs={5} lg={5}>
               {stateIdsIndexes.map((stateId) => (
-                <Col xs={3} lg={3}>
+                <Col
+                  className="stateModal__Col"
+                  // xs={{ span: 2 }}
+                  // lg={{ span: 2 }}
+                >
                   <div
                     className="stateModal__mapDiv"
                     key={stateId}
@@ -80,4 +84,3 @@ const StateModals = (props) => {
 };
 
 export default StateModals;
-
