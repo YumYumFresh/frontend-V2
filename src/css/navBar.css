@@ -3,18 +3,18 @@
 .navBar__container {
   background-color: #ffaa27;
   box-shadow: 10px 10px 30px 5px grey;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
   width: 100%;
 }
 
 #navBar__img {
   border-radius: 50%;
-  width: 20%;
+  width: 40%;
   height: 20%;
 }
 
 .navbar__header {
+  position: relative;
 }
 
 .navBar__h1 {
@@ -22,6 +22,6 @@
   display: inline;
   font-family: "The Farmer Textured";
   font-size: 100px;
-  margin: 5%;
+  margin: 7%;
 }
 

@@ -33,9 +33,6 @@ const card = (props) => {
                   and the month is{" "}
                   {props.monthLookup[sessionStorage.getItem("userMonth")]}{" "}
                   <br />
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                  <br />
                 </Card.Text>
               </Card.Body>
             </Card>

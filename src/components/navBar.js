@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 //import NavDropdown from "react-bootstrap/NavDropdown";
 import RealLogo from "../images/realLogo.png";
+import Header from "../components/header";
 import "../css/navBar.css";
 
 const navBar = () => {
@@ -24,6 +25,9 @@ const navBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
         </Navbar.Collapse>
+        <Navbar.Text>
+        <Header />
+    </Navbar.Text>
       </Navbar>
     </div>
   );

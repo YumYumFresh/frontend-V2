@@ -10,7 +10,7 @@ const header = () => {
       <Row>
         <Col xs={6} lg={2}>
           <div>
-            <img src={Logo1} alt="logo" className="header__img" />
+          {/* <img src={Logo1} alt="logo" className="header__img" /> */}
           </div>
         </Col>
         <Col xs={6} lg={10}>

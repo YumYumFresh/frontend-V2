@@ -87,7 +87,7 @@ const AppTab = () => {
   };
 
   return (
-    <div>
+    <div className="app__mainDiv">
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} lg={2}>

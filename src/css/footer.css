@@ -1,3 +1,5 @@
+@import url("../fonts/WEB/stylesheet.css");
+
 .footer__container {
   background-color: #ffaa27;
   box-shadow: 5px -5px 40px 1px grey;
@@ -21,7 +23,7 @@
 .footer__a {
   margin-left: 70%;
   color: white;
-  font-family: Dancing Script;
+  font-family: "The Farmer Textured";
 }
 
 .footer__text {
@@ -29,5 +31,6 @@
 }
 
 .footer__fontLogo {
-  font-family: Dancing Script;
+  font-family: "The Farmer Textured";
+  margin-left: 1%;
 }
