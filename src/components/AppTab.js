@@ -10,6 +10,8 @@ import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
 import Cards from "./Cards";
+import DisplaySelection from "./DisplaySelection";
+
 
 
 const AppTab = () => {
@@ -94,6 +96,7 @@ const AppTab = () => {
 
   return (
     <div className="app__mainDiv">
+      <DisplaySelection/>
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} lg={2}>

@@ -72,31 +72,9 @@ const Geolocation = (props) => {
   }
 
   return (
-    <>
-      <div className="geolocation__header">
-        <h1>{location}</h1>
-        <ul>
-          <li>
-            {" "}
-            <h3> state: {statess}</h3>{" "}
-          </li>
-          <li>
-            {" "}
-            <h3> month: {month}</h3>{" "}
-          </li>
-          <li>
-            {" "}
-            <h3> zip: {zipCode}</h3>{" "}
-          </li>
-        </ul>
+      <div>
+        
       </div>
-      {/* <Card
-        statess={statess}
-        month={month}
-        stateIds={props.stateIds}
-        monthLookup={props.monthLookup}
-      /> */}
-    </>
   );
 };
 
