@@ -1,4 +1,6 @@
 .cards__div{
-    border: 2px solid red;
+display: flex;
+margin-bottom: 20%;
+margin-top: 10%;
 
 }

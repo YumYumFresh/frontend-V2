@@ -5,3 +5,16 @@
 .backOfCard__disabled{
     color: black;
 }
+
+.backOfCard__div{
+    background-color: white;
+    margin: 10%;
+    height:70%;
+    width: 70%;
+}
+
+.backOfCard__monthDiv{
+   border: 2px solid black;
+   margin: 1%; 
+   width: 80%;
+}

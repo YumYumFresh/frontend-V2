@@ -20,20 +20,25 @@ const BackOfCard = ({ click, prodBack, prod }) => {
     "December",
   ];
 
-  const monthsInSeason = prodBack[0].months
+  //const monthsInSeason = prodBack[0].months
 
 
   return (
-    <div>
+    <div className="backOfCard__div">
       <h1>produce: {prod.name}</h1>
           <Row>
             {monthLookup.map((month) => {
               return (
                 <Col xs={6} lg={6}>
-                    {monthsInSeason.includes(month)?(  
+                  <div className="backOfCard__monthDiv">
+                  <h3>
+                    {month}
+                  </h3>
+                  </div>
+                    {/* {monthsInSeason.includes(month)?(  
                   <h1 className="backOfCard__enabled">{month}</h1>):(
                   <h1 className="backOfCard__disabled">{month}</h1>
-                  )}
+                  )} */}
                 </Col>
               );
             })}

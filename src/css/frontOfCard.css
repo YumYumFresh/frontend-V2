@@ -1,0 +1,11 @@
+.frontOfCard__img{
+    object-fit: cover;
+    height: 20vh;
+    
+}
+
+.frontOfCard__card{
+    margin: 10%;
+    height:70%;
+    width: 70%;
+}
