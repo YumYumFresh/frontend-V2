@@ -12,8 +12,6 @@ import Geolocation from "./Geolocation";
 import Cards from "./Cards";
 import DisplaySelection from "./DisplaySelection";
 
-
-
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
   const [monthsModalShow, setMonthsModalShow] = useState(false);
@@ -53,7 +51,7 @@ const AppTab = () => {
     Iowa: 15,
     Kansas: 16,
     Kentucky: 17,
-    Louisana: 18,
+    Louisiana: 18,
     Maine: 19,
     Maryland: 20,
     Massachusetts: 21,
@@ -88,19 +86,17 @@ const AppTab = () => {
     Wyoming: 50,
   };
 
- const fireAxios = () => {
-   setDisplayCards(!displayCards)
- }
-    
-  
+  const fireAxios = () => {
+    setDisplayCards(!displayCards);
+  };
 
   return (
     <div className="app__mainDiv">
-      <DisplaySelection/>
+      <DisplaySelection />
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
-          <Col sm={3} lg={2}>
-            <label for="menu-toggle" >☰ Menu</label>
+          <Col sm={3} lg={2} style={{ marginTop: 0 }}>
+            <label for="menu-toggle">☰ Menu</label>
             <input type="checkbox" id="menu-toggle" />
             <Nav id="menu" className="flex-column">
               <Nav.Item>
@@ -109,10 +105,10 @@ const AppTab = () => {
                   eventKey="first"
                   onClick={() => {
                     reloadGeolocation
-                    ? setReloadGeolocation(false)
-                    : setReloadGeolocation(true);
+                      ? setReloadGeolocation(false)
+                      : setReloadGeolocation(true);
                   }}
-                  >
+                >
                   Home
                 </Nav.Link>
               </Nav.Item>
@@ -122,7 +118,7 @@ const AppTab = () => {
                   className="tab__link"
                   eventKey="second"
                   onClick={() => setStatessModalShow(true)}
-                  >
+                >
                   Change State
                 </Nav.Link>
               </Nav.Item>
@@ -132,7 +128,7 @@ const AppTab = () => {
                   className="tab__link"
                   eventKey="third"
                   onClick={() => setMonthsModalShow(true)}
-                  >
+                >
                   Change Month
                 </Nav.Link>
               </Nav.Item>
@@ -153,7 +149,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                   stateIds={stateIds}
                   fire={fireAxios}
-                  />
+                />
                 <Cards
                   // statess={statess}
                   // month={month}

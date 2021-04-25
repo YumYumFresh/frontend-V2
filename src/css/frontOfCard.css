@@ -1,14 +1,17 @@
-.frontOfCard__img{
-    object-fit: cover;
-    height: 20vh;
-    
+.frontOfCard__img {
+  object-fit: cover;
+  height: 20vh;
 }
 
-.frontOfCard__card{
-    margin: 10%;
-    height:70%;
-    width: 50%;
-    min-width: 30%;
-    min-height: fit-content;
-    font-size: clamp(1rem, 2.5vw, 2rem); 
+.frontOfCard__card {
+  margin: 10%;
+  height: 70%;
+  width: 50%;
+  min-width: 30%;
+  min-height: fit-content;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
+/* .react-card-front {
+  width: 30%;
+  height: fit-content;
+} */

@@ -15,23 +15,25 @@ const ProduceCard = ({ prod }) => {
   };
 
   return (
-    
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal"  >
-        <FrontOfCard key="front" click={handleClick} prod={prod}>
-          .
-        </FrontOfCard>
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <FrontOfCard
+        key="front"
+        click={handleClick}
+        prod={prod}
+        style={{ width: 20 }}
+      >
+        .
+      </FrontOfCard>
 
-        <BackOfCard
-          key="back"
-          click={handleClick}
-          prodBack={prod.only_associated_harvest}
-          prod={prod}
-        >
-          .
-        </BackOfCard>
-      </ReactCardFlip>
-  
-    
+      <BackOfCard
+        key="back"
+        click={handleClick}
+        prodBack={prod.only_associated_harvest}
+        prod={prod}
+      >
+        .
+      </BackOfCard>
+    </ReactCardFlip>
   );
 };
 
