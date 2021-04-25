@@ -11,11 +11,13 @@ import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
 import Stub from "./stub";
+import Card from "./card";
 
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
   const [monthsModalShow, setMonthsModalShow] = useState(false);
   const [reloadGeolocation, setReloadGeolocation] = useState(false);
+  const [displayCards, setDisplayCards] = useState(true);
   const monthLookup = [
     "January",
     "February",
@@ -142,6 +144,12 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                   stateIds={stateIds}
                 />
+                <Card
+                  // statess={statess}
+                  // month={month}
+                  stateIds={stateIds}
+                  monthLookup={monthLookup}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <br />
@@ -150,13 +158,25 @@ const AppTab = () => {
                   statessModalShow={statessModalShow}
                   setStatessModalShow={setStatessModalShow}
                 />
+                <Card
+                  // statess={statess}
+                  // month={month}
+                  stateIds={stateIds}
+                  monthLookup={monthLookup}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <br />
-                <Stub />
+                <Stub monthsModalShow={monthsModalShow} />
                 <MonthsModals
                   monthsModalShow={monthsModalShow}
                   setMonthsModalShow={setMonthsModalShow}
+                  monthLookup={monthLookup}
+                />
+                <Card
+                  // statess={statess}
+                  // month={month}
+                  stateIds={stateIds}
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>

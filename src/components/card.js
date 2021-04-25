@@ -27,9 +27,12 @@ const card = (props) => {
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
-                  State is {props.statess} and state id is{" "}
-                  {props.stateIds[props.statess]} <br />
-                  and the month is {props.monthLookup[props.month]} <br />
+                  State is {sessionStorage.getItem("usersState")} and state id
+                  is{" Gee do I needta know really?"}
+                  <br />
+                  and the month is{" "}
+                  {props.monthLookup[sessionStorage.getItem("userMonth")]}{" "}
+                  <br />
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                   <br />
@@ -82,4 +85,3 @@ const card = (props) => {
 };
 
 export default card;
-
