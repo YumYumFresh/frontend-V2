@@ -89,12 +89,12 @@ const Geolocation = (props) => {
           </li>
         </ul>
       </div>
-      <Card
+      {/* <Card
         statess={statess}
         month={month}
         stateIds={props.stateIds}
         monthLookup={props.monthLookup}
-      />
+      /> */}
     </>
   );
 };
