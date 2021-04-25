@@ -10,7 +10,7 @@ const header = () => {
       <Row>
         <Col xs={6} lg={2}>
           <div>
-          {/* <img src={Logo1} alt="logo" className="header__img" /> */}
+            {/* <img src={Logo1} alt="logo" className="header__img" /> */}
           </div>
         </Col>
         <Col xs={6} lg={10}>
@@ -20,15 +20,16 @@ const header = () => {
           <div className="header__p">
             <p>
               {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-              perferendis ducimus aperiam odio qui sequi similique rerum omnis
-              ipsam eaque commodi autem ipsa in, dolore exercitationem
-              reprehenderit sint aut excepturi.
+              Eating local food while it’s in season is more than just a cool
+              fad for hip youths and hippies alike. It’s a way of life and a
+              necessity to help lead us into creating a sustainable future, for
+              us and for generations to come. Yum Yum Fresh is your go-to site
+              to know not only know what produce is currently in season, but
+              also your resource to find local farmers markets in your area.
               <hr />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-              dolore, quibusdam officiis repudiandae molestiae rem voluptate
-              quia architecto officia iste perspiciatis quae porro nulla
-              pariatur consequuntur! Vero assumenda numquam fuga.
+              Eating seasonally and supporting local farmers not only tastes
+              better, but it puts resources back into your community, creating
+              an eco-system of growth, sustainability, and opportunity.
             </p>
           </div>
         </Col>
@@ -38,4 +39,3 @@ const header = () => {
 };
 
 export default header;
-

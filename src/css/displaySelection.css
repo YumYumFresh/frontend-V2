@@ -1,15 +1,15 @@
 @import url("../fonts/WEB/stylesheet.css");
 
-.displaySelection__div{
-    background-color: #ffaa27;
-    border-radius: 50px;
-    width: 30%;
-    margin-left: 15%;
-    padding: 1%;
-    font-family: "The Farmer Textured";
-    
+.displaySelection__div {
+  background-color: #ffaa27;
+  border-radius: 50px;
+  width: 30%;
+  /* margin-top: 0; */
+  margin-left: 15%;
+  padding: 1%;
+  font-family: "The Farmer Textured";
 }
 
-.displaySelection__h1{
-    margin-left: 5%;
+.displaySelection__h1 {
+  margin-left: 5%;
 }

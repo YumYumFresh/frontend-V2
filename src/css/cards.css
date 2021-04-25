@@ -1,10 +1,9 @@
-.cards__div{
-display: flex;
-margin-bottom: 20%;
-margin-top: 10%;
-width: 70%;
-flex-direction: row;
-flex-wrap: wrap;
-
-
+.cards__div {
+  display: flex;
+  margin-bottom: 20%;
+  margin-top: 10px;
+  width: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

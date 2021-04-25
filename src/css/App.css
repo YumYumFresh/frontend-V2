@@ -3,7 +3,7 @@
   background-size: auto;
   margin-bottom: -20%;
 }
-.app__mainDiv{
+.app__mainDiv {
   padding: 2%;
 }
 
@@ -14,9 +14,19 @@
   padding: 1%;
 }
 
-.app_border{
-
+.app_border {
 }
+
+/* <div
+  class="react-card-flipper"
+  style="height: 100%; position: relative; width: 100%;"
+  > 
+   */
+/* .react-card-flipper {
+  height: 30%;
+  width: 30%;
+} */
+
 /* .App {
   text-align: center;
 }
@@ -54,5 +64,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
-
+} */ ;
