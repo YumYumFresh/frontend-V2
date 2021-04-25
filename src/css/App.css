@@ -1,6 +1,7 @@
 .App {
-  /* margin: 0px;
- padding: 0px; */
+  background: url(../images/YYFBackground.png);
+  background-size: auto;
+  margin-bottom: -20%;
 }
 .app__mainDiv{
   padding: 2%;

@@ -10,12 +10,17 @@
   height: 100%;
   border-radius: 70%;
   box-shadow: -10px 22px 30px 2px grey;
+  background-color: white;
+}
+.landingPage__img1 {
+  height: 100vh;
+  width: 100vw;
 }
 
 .landingPage__div {
   position: fixed;
-  top: 50%;
-  left: 48%;
+  top: 90%;
+  left: 52%;
   margin-top: -240px;
   margin-left: -420px;
   padding: 2%;
