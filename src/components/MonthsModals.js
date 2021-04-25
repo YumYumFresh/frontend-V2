@@ -15,7 +15,7 @@ const MonthsModals = (props) => {
   const [monthSelect, setMonthSelect] = useState();
 
   const handleMonthSelect = (month) => {
-    // sessionStorage.setItem("month", month);
+    sessionStorage.setItem("month", month);
     sessionStorage.setItem("userMonth", props.monthLookup.indexOf(month));
     console.log(sessionStorage.getItem("month"));
     console.log(
@@ -24,6 +24,7 @@ const MonthsModals = (props) => {
       )}/produces?month=${month}`
     );
     props.setMonthsModalShow(false);
+    props.fire()
   };
 
   const monthLookup = props.monthLookup;

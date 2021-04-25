@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
-
+import "../css/cards.css"
 import axios from "axios"
 import ProduceCard from "./ProduceCard";
 
 const Cards = (props) => {
   const [produceData, setProduceData] = useState([]);
-  
+  const state = sessionStorage.getItem("usersState")
+  const month = sessionStorage.getItem("month")
+  const stateId = sessionStorage.getItem("userStateId")
   
   
   useEffect(() => {
+    console.log("axios data", state, month, stateId)
     axios
-      .get(`http://yumyumfresh-api.herokuapp.com/states/New%20York/produces?month=October&lookup_id=32}`)
+      .get(`http://yumyumfresh-api.herokuapp.com/states/${state}/produces?month=${month}&lookup_id=${stateId}`)
       .then((res) => {
+        console.log(res)
         setProduceData(res.data)
-        console.log("this is the produce data",produceData);
       });
-  }, []);
+  }, [props.display]);
 
 
 

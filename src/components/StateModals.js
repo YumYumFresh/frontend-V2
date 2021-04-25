@@ -16,8 +16,9 @@ const StateModals = (props) => {
     reverseStateIds[stateIdsIndexes[i]] = stateIdsNames[i];
   }
 
-  function handleStateSelect(selection) {
+  function handleStateSelect(selection, stateId) {
     sessionStorage.setItem("usersState", selection);
+    sessionStorage.setItem("userStateId", stateId);
     setStateSelect(selection);
     console.log(selection);
     console.log(
@@ -26,6 +27,7 @@ const StateModals = (props) => {
       )}`
     );
     props.setStatessModalShow(false);
+    props.fire()
   }
 
   function MyVerticallyCenteredModal(props) {
@@ -57,7 +59,7 @@ const StateModals = (props) => {
                   <div
                     className="stateModal__mapDiv"
                     key={stateId}
-                    onClick={() => handleStateSelect(reverseStateIds[stateId])}
+                    onClick={() => handleStateSelect(reverseStateIds[stateId],stateId)}
                   >
                     {reverseStateIds[stateId]}
                   </div>

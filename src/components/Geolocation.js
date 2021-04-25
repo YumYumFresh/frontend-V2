@@ -47,6 +47,7 @@ const Geolocation = (props) => {
         sessionStorage.setItem("userMonth", realDate);
         //console.log("session storage month" ,sessionStorage.getItem("userMonth"));
         sessionStorage.setItem("usersState", res.data.data[0].region);
+        props.fire()
       })
 
       .catch((error) => console.log(error));

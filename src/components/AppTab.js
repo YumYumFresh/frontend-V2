@@ -4,13 +4,11 @@ import "../css/tab.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-// import Card from "../components/card";
 import FarmersMarket from "./FarmersMarket";
 import Modals from "./Modals";
 import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
-import Stub from "./stub";
 import Cards from "./Cards";
 
 
@@ -88,7 +86,9 @@ const AppTab = () => {
     Wyoming: 50,
   };
 
- 
+ const fireAxios = () => {
+   setDisplayCards(!displayCards)
+ }
     
   
 
@@ -149,10 +149,12 @@ const AppTab = () => {
                   reloadGeolocation={reloadGeolocation}
                   monthLookup={monthLookup}
                   stateIds={stateIds}
+                  fire={fireAxios}
                   />
                 <Cards
                   // statess={statess}
                   // month={month}
+                  display={displayCards}
                   stateIds={stateIds}
                   monthLookup={monthLookup}
                 />
@@ -163,25 +165,28 @@ const AppTab = () => {
                   stateIds={stateIds}
                   statessModalShow={statessModalShow}
                   setStatessModalShow={setStatessModalShow}
+                  fire={fireAxios}
                 />
                 <Cards
                   // statess={statess}
                   // month={month}
+                  display={displayCards}
                   stateIds={stateIds}
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <br />
-                <Stub monthsModalShow={monthsModalShow} />
                 <MonthsModals
                   monthsModalShow={monthsModalShow}
                   setMonthsModalShow={setMonthsModalShow}
                   monthLookup={monthLookup}
+                  fire={fireAxios}
                 />
                 <Cards
                   // statess={statess}
                   // month={month}
+                  display={displayCards}
                   stateIds={stateIds}
                   monthLookup={monthLookup}
                 />
@@ -192,7 +197,6 @@ const AppTab = () => {
             </Tab.Content>
           </Col>
         </Row>
-        
       </Tab.Container>
     </div>
   );
