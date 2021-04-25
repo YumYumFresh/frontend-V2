@@ -19,7 +19,6 @@ const Cards = (props) => {
       )
       .then((res) => {
         console.log(res);
-        debugger
         setProduceData(res.data);
       });
   }, [props.display]);

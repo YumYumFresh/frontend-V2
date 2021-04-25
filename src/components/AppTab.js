@@ -100,7 +100,7 @@ const AppTab = () => {
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3} lg={2}>
-            <label for="menu-toggle">☰ Menu</label>
+            <label for="menu-toggle" >☰ Menu</label>
             <input type="checkbox" id="menu-toggle" />
             <Nav id="menu" className="flex-column">
               <Nav.Item>
@@ -147,7 +147,7 @@ const AppTab = () => {
           </Col>
           <Col sm={9}>
             <Tab.Content>
-              <Tab.Pane eventKey="first">
+              <Tab.Pane eventKey="first" className="app__border">
                 <Geolocation
                   reloadGeolocation={reloadGeolocation}
                   monthLookup={monthLookup}
@@ -162,7 +162,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="second">
+              <Tab.Pane eventKey="second" className="app__border">
                 <br />
                 <StateModals
                   stateIds={stateIds}
@@ -178,7 +178,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="third">
+              <Tab.Pane eventKey="third" className="app__border">
                 <br />
                 <MonthsModals
                   monthsModalShow={monthsModalShow}
@@ -194,7 +194,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="fourth">
+              <Tab.Pane eventKey="fourth" className="app__border">
                 <FarmersMarket />
               </Tab.Pane>
             </Tab.Content>

@@ -1,7 +1,7 @@
 .landingPage__container {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 46%;
   margin-top: -300px;
   margin-left: -200px;
 }
@@ -19,14 +19,15 @@
 
 .landingPage__div {
   position: fixed;
-  top: 90%;
+  top: 100%;
   left: 52%;
-  margin-top: -240px;
-  margin-left: -420px;
+  margin-top: -160px;
+  margin-left: -260px;
   padding: 2%;
-  width: 200px;
+  width: 20%;
   background-color: #fef8fa;
   border-radius: 20px;
+  
 
   box-shadow: -5px 10px 20px 2px grey;
 }

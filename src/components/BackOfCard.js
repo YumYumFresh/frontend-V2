@@ -30,14 +30,12 @@ const BackOfCard = ({ click, prodBack, prod }) => {
             {monthLookup.map((month) => {
               return (
                 <Col xs={6} lg={6}>
-                  <div className="backOfCard__monthDiv">
-                  <h3>
-                    {month}
-                  </h3>
-                  </div>
                     {/* {monthsInSeason.includes(month)?(  
-                  <h1 className="backOfCard__enabled">{month}</h1>):(
-                  <h1 className="backOfCard__disabled">{month}</h1>
+                      <div className="backOfCard__monthDiv">
+                  <h3 className="backOfCard__enabled">{month}</h3>
+                  </div>):(<div className="backOfCard__monthDiv">
+                  <h3 className="backOfCard__disabled">{month}</h3>
+                  </div>
                   )} */}
                 </Col>
               );
