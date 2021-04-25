@@ -9,9 +9,20 @@ const Geolocation = (props) => {
   const [zipCode, setZipCode] = useState();
   const [month, setMonth] = useState();
 
+  const stateIdsIndexes = Object.values(props.stateIds);
+  const stateIdsNames = Object.keys(props.stateIds);
+  let reverseStateIds = {};
+  for (let i = 0; i < stateIdsIndexes.length; i++) {
+    reverseStateIds[stateIdsIndexes[i]] = stateIdsNames[i];
+  }
+
+  const monthLU = props.monthLookup;
+
   useEffect(() => {
     const date = new Date();
     setMonth(date.getMonth());
+    // Window.sessionStorage("userMonth", month);
+    // Window.sessionStorage("month", props.monthLookup(month));
     showPosition();
   }, [props.reloadGeolocation]);
 
@@ -45,9 +56,15 @@ const Geolocation = (props) => {
         sessionStorage.setItem("userZipCode", res.data.data[0].postal_code);
         //console.log("session storage zipcode" ,sessionStorage.getItem("userZipCode"));
         sessionStorage.setItem("userMonth", realDate);
+        sessionStorage.setItem("month", monthLU[realDate]);
         //console.log("session storage month" ,sessionStorage.getItem("userMonth"));
         sessionStorage.setItem("usersState", res.data.data[0].region);
-        props.fire()
+        // debugger;
+        sessionStorage.setItem(
+          "userStateId",
+          props.stateIds[res.data.data[0].region]
+        );
+        props.fire();
       })
 
       .catch((error) => console.log(error));
@@ -71,11 +88,7 @@ const Geolocation = (props) => {
     }
   }
 
-  return (
-      <div>
-        
-      </div>
-  );
+  return <div></div>;
 };
 
 export default Geolocation;
