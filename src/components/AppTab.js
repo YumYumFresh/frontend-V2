@@ -11,13 +11,15 @@ import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
 import Stub from "./stub";
-import Card from "./card";
+import Cards from "./Cards";
+
 
 const AppTab = () => {
   const [statessModalShow, setStatessModalShow] = useState(false);
   const [monthsModalShow, setMonthsModalShow] = useState(false);
   const [reloadGeolocation, setReloadGeolocation] = useState(false);
   const [displayCards, setDisplayCards] = useState(true);
+
   const monthLookup = [
     "January",
     "February",
@@ -86,6 +88,10 @@ const AppTab = () => {
     Wyoming: 50,
   };
 
+ 
+    
+  
+
   return (
     <div className="app__mainDiv">
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -100,10 +106,10 @@ const AppTab = () => {
                   eventKey="first"
                   onClick={() => {
                     reloadGeolocation
-                      ? setReloadGeolocation(false)
-                      : setReloadGeolocation(true);
+                    ? setReloadGeolocation(false)
+                    : setReloadGeolocation(true);
                   }}
-                >
+                  >
                   Home
                 </Nav.Link>
               </Nav.Item>
@@ -113,7 +119,7 @@ const AppTab = () => {
                   className="tab__link"
                   eventKey="second"
                   onClick={() => setStatessModalShow(true)}
-                >
+                  >
                   Change State
                 </Nav.Link>
               </Nav.Item>
@@ -123,7 +129,7 @@ const AppTab = () => {
                   className="tab__link"
                   eventKey="third"
                   onClick={() => setMonthsModalShow(true)}
-                >
+                  >
                   Change Month
                 </Nav.Link>
               </Nav.Item>
@@ -143,8 +149,8 @@ const AppTab = () => {
                   reloadGeolocation={reloadGeolocation}
                   monthLookup={monthLookup}
                   stateIds={stateIds}
-                />
-                <Card
+                  />
+                <Cards
                   // statess={statess}
                   // month={month}
                   stateIds={stateIds}
@@ -158,7 +164,7 @@ const AppTab = () => {
                   statessModalShow={statessModalShow}
                   setStatessModalShow={setStatessModalShow}
                 />
-                <Card
+                <Cards
                   // statess={statess}
                   // month={month}
                   stateIds={stateIds}
@@ -173,7 +179,7 @@ const AppTab = () => {
                   setMonthsModalShow={setMonthsModalShow}
                   monthLookup={monthLookup}
                 />
-                <Card
+                <Cards
                   // statess={statess}
                   // month={month}
                   stateIds={stateIds}
@@ -186,6 +192,7 @@ const AppTab = () => {
             </Tab.Content>
           </Col>
         </Row>
+        
       </Tab.Container>
     </div>
   );

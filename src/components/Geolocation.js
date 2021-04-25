@@ -1,5 +1,5 @@
 import axios from "axios";
-import Card from "../components/card";
+import Card from "./Cards";
 import React, { useEffect, useState } from "react";
 import "../css/geolocation.css";
 
