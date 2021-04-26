@@ -15,7 +15,7 @@ const ProduceCard = ({ prod }) => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" containerStyle={{ margin:"5%", borderRadius: "10px"}}>
       <FrontOfCard
         key="front"
         click={handleClick}

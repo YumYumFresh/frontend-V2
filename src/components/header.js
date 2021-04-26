@@ -15,13 +15,12 @@ const header = () => {
         </Col>
         <Col xs={6} lg={10}>
           <div className="header__header">
-            <h1>Blurb/About Us</h1>
+            <h1>About</h1>
           </div>
           <div className="header__p">
             <p>
               {" "}
-              Eating local food while it’s in season is more than just a cool
-              fad for hip youths and hippies alike. It’s a way of life and a
+              Eating local food while it’s in season is more than just a cool fad for hip youths and hippies alike. It’s a way of life and a
               necessity to help lead us into creating a sustainable future, for
               us and for generations to come. Yum Yum Fresh is your go-to site
               to know not only know what produce is currently in season, but

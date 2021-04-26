@@ -1,18 +1,21 @@
 
 .header__container {
-  margin: 5%;
+  margin-top: 0;
+  margin-left: 300px;
 }
 
-.header__img {
+/* .header__img {
   width: 100%;
   object-fit: contain;
   border-radius: 50%;
   width: 100%;
   height: 20%;
-}
+} */
 
 .header__header {
+  color: #251e23ff;
 }
 
 .header__p {
+  max-width: 950px;
 }

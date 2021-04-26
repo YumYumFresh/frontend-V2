@@ -1,10 +1,9 @@
 .cards__div {
-  background-color: #ffaa27ff;
   display: flex;
-  margin-bottom: 20%;
-  margin-top: 10px;
-  width: 70%;
+  margin-bottom: 10%; 
+  flex-wrap: wrap; 
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  background-color: #ffaa27ff;
+  border-radius: 20px;
+  width: 1095px;
 }

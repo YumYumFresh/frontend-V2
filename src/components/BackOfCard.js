@@ -29,7 +29,8 @@ const BackOfCard = ({ click, prodBack, prod }) => {
           className="backOfCard__div"
           style={{ height: "fitContent", width: 300 }}
         >
-          <h1>produce: {prod.name}</h1>
+          <h1>{prod.name}</h1>
+          <h3>Available In:</h3>
           <Row>
             {monthLookup.map((month) => {
               return (
@@ -47,7 +48,7 @@ const BackOfCard = ({ click, prodBack, prod }) => {
               );
             })}
           </Row>
-          <button onClick={click}>Click to flip</button>
+          <button onClick={click} style={{ border: "none", boxShadow: "-2px 4px 10px 1px grey", borderRadius: "20px", backgroundColor: "#be1599ff", color: "#fff8faff"}}>Click to flip</button>
         </div>
       </Card.Body>
     </Card>

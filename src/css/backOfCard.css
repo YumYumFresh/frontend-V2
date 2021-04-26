@@ -1,9 +1,11 @@
 .backOfCard__enabled{
-    color: red;
+    border: 2px solid #3fb500ff;  
+    
     
 }
 .backOfCard__disabled{
-    color: black;
+    color: grey;
+    opacity: 0.5;
 }
 
 .backOfCard__div{
@@ -13,8 +15,13 @@
     width: 70%;
 }
 
-.backOfCard__monthDiv{
-   border: 2px solid black;
+.backOfCard__monthDiv{   
    margin: 1%; 
    width: 110%;
 }
+
+button{
+    position: absolute; 
+    bottom: 10px;
+    right: 130px   
+  }

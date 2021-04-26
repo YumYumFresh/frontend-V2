@@ -13,14 +13,14 @@ const FrontOfCard = ({ click, prod }) => {
         variant="top"
         src={prod.image}
         className="frontOfCard__img"
-        style={{ objectFit: "cover", height: 300 }}
+        style={{ objectFit: "cover", height: 300 , padding: "10px"}}
       />
-      <Card.Body style={{ overflow: "overlay", height: 500 }}>
+      <Card.Body style={{ overflow: "overlay", height: 365 }}>
         <Card.Title>{prod.name}</Card.Title>
         <Card.Text>
           {prod.description}
           <br />
-          <button onClick={click}>Click to flip</button>
+          <button onClick={click} style={{ border: "none", boxShadow: "-2px 4px 10px 1px grey", borderRadius: "20px", backgroundColor: "#be1599ff", color: "#fff8faff"}}>Click to flip</button>
         </Card.Text>
       </Card.Body>
     </Card>

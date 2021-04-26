@@ -5,7 +5,7 @@
 
 .frontOfCard__card {
   margin: 10%;
-  height: 70%;
+  height: 100%;
   width: 50%;
   min-width: 30%;
   min-height: fit-content;
@@ -15,3 +15,10 @@
   width: 30%;
   height: fit-content;
 } */
+
+button{
+  position: absolute; 
+  bottom: 10px;
+  right: 130px   
+}
+

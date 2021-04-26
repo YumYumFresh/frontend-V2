@@ -2,7 +2,7 @@
 }
 
 .tab__hr{
-    border: 1px solid #C6E0FF;
+    border: 1px solid#076321ff;
     width:100%;
     opacity: 1.0;
 }
@@ -39,4 +39,19 @@
 
 #menu-toggle:checked + #menu {
     max-height: 500px;
+}
+
+div#left-tabs-example-tabpane-first{
+    background-color: #ffaa27ff;
+    border-radius: 20px;
+    width: 1095px;
+}
+
+label{
+    background-color: #ffaa27;
+    font-family: "The Farmer Textured";
+    font-size: 45px;
+    border-radius: 50px;
+    width: 240px;
+    text-align: center;    
 }
