@@ -34,7 +34,7 @@ const FarmersMarket = () => {
         <input
           type="text"
           value={zipcode}
-          // defaultValue={sessionStorage.getItem("userZipCode")}
+          defaultValue={sessionStorage.getItem("userZipCode")}
           placeholder={
             sessionStorage.getItem("userZipCode")
               ? sessionStorage.getItem("userZipCode")
