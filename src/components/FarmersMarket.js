@@ -41,9 +41,11 @@ const FarmersMarket = () => {
               : "enter your zip"
           }
           onChange={handleChange}
-          style={{ padding: "5%", width: "100%" }}
+          style={{ padding: "5%", width: "100%", borderRadius:"20px", fontSize:"125%", textDecoration:"none",  outline:"none" }}
         />
-        <button type="submit"> find farm</button>
+        <div>
+        <button type="submit" style={{marginBotttom:"30px", marginRight:"100px"}}> find farm</button>
+        </div>
       </form>
       {markets
         ? markets.map((market) => (

@@ -16,6 +16,7 @@ const ProduceCard = ({ prod }) => {
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" containerStyle={{ margin:"5%", borderRadius: "10px"}}>
+
       <FrontOfCard
         key="front"
         click={handleClick}
@@ -24,13 +25,12 @@ const ProduceCard = ({ prod }) => {
       >
         .
       </FrontOfCard>
-
       <BackOfCard
         key="back"
         click={handleClick}
         prodBack={prod.only_associated_harvest}
         prod={prod}
-      >
+        >
         .
       </BackOfCard>
     </ReactCardFlip>

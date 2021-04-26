@@ -60,8 +60,10 @@ const MonthsModals = (props) => {
             </Row>
           </Container>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+        <Modal.Footer >
+          <div style={{marginTop:"30px", marginRight:"100px"}}>
+          <Button onClick={props.onHide} >Close</Button>
+          </div>
         </Modal.Footer>
       </Modal>
     );

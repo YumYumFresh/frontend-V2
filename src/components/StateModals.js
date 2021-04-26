@@ -37,7 +37,7 @@ const StateModals = (props) => {
         size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-      >
+        >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             State Select
@@ -52,9 +52,9 @@ const StateModals = (props) => {
             <Row xs={5} lg={5}>
               {stateIdsIndexes.map((stateId) => (
                 <Col
-                  className="stateModal__Col"
-                  // xs={{ span: 2 }}
-                  // lg={{ span: 2 }}
+                className="stateModal__Col"
+                // xs={{ span: 2 }}
+                // lg={{ span: 2 }}
                 >
                   <div
                     className="stateModal__mapDiv"
@@ -69,8 +69,10 @@ const StateModals = (props) => {
           </Container>
         </Modal.Body>
         <Modal.Footer>
+        <div style={{marginTop:"30px", marginRight:"100px"}}>
+          <Button onClick={props.onHide} >Close</Button>
+          </div>
         </Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
       </Modal>
     );
   }
