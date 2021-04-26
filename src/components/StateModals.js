@@ -69,8 +69,8 @@ const StateModals = (props) => {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
       </Modal>
     );
   }
