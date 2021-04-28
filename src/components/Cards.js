@@ -4,7 +4,6 @@ import axios from "axios";
 import ProduceCard from "./ProduceCard";
 import Container from "react-bootstrap/esm/Container";
 
-
 const Cards = (props) => {
   const [produceData, setProduceData] = useState([]);
   const state = sessionStorage.getItem("usersState");
@@ -15,7 +14,7 @@ const Cards = (props) => {
     console.log("axios data", state, month, stateId);
     axios
       .get(
-        `http://yumyumfresh-api.herokuapp.com/states/${state}/produces?month=${month}&lookup_id=${stateId}`
+        `https://yumyumfresh-api.herokuapp.com/states/${state}/produces?month=${month}&lookup_id=${stateId}`
       )
       .then((res) => {
         console.log(res);
@@ -25,12 +24,9 @@ const Cards = (props) => {
 
   return (
     <div className="cards__div">
-   
-       { produceData.map((prod) => {
-          return <ProduceCard prod={prod} />;
-        })
-      }
-
+      {produceData.map((prod) => {
+        return <ProduceCard prod={prod} />;
+      })}
     </div>
   );
 };
