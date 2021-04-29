@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo1 from "../images/realLogo.png";
-import Logo2 from "../images/fakeLogo2.png";
-import App from "../App";
 import { Link } from "react-router-dom";
 import "../css/landingPage.css";
-import Lettuce from "../images/lettuces.png";
+// import Lettuce from "../images/lettuces.png";
 
 const LandingPage = () => {
   return (
     <>
-      <div className="landingPage__img1">
+      <div className="tacos">
         <div className="landingPage__container">
           <img src={Logo1} alt="logo" className="landingPage__img" />
         </div>
@@ -19,7 +17,7 @@ const LandingPage = () => {
             Click to find produce in your location.
           </Link>
         </div>
-      </div>
+        </div>
     </>
   );
 };
