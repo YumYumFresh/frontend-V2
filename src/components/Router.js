@@ -1,12 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import App from "../App";
-import LandingPage from "./LandingPage";
+import LandingBg from "./LandingBg";
+
 
 const Router = () => {
   return (
     <Switch>
-      <Route path="/" exact render={LandingPage} />
+      <Route path="/" exact render={LandingBg} />
       <Route path="/yumyum" render={App} />
     </Switch>
   );
