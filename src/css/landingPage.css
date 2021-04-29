@@ -1,10 +1,4 @@
-.tacos {
-  background-image: url("https://www.thesimpledollar.com/wp-content/uploads/2020/04/TheSimpleDollar-Fun-With-Friends.png");
-  height: 880px;
-  width: 1920px;
-  object-fit: contain;
-  position: fixed;
-}
+
 
 .landingPage__container {
   position: fixed;
@@ -13,6 +7,17 @@
   margin-top: -300px;
   margin-left: -200px;
   
+}
+
+@media screen and (min-width: 400px) {
+  .landingPage__img {
+      width: 350px;
+      height: 350px;
+      border-radius: 70%;
+      box-shadow: -10px 22px 30px 2px grey;
+      background-color: white;
+      margin-left: 11%;
+  }
 }
 
 .landingPage__img {
