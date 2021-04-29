@@ -9,8 +9,8 @@ import Lettuce from "../images/lettuces.png"
 const LandingPage = () => {
   return (
     <>
-    <div style={{background:"../images/lettuces.png"}} className="landingPage__img1" >
-
+    <div>
+    <img className="landingPage__img1" src={Lettuce} alt="background"/>
       <div className="landingPage__container">
         <img src={Logo1} alt="logo" className="landingPage__img" />
       </div>
