@@ -11,10 +11,10 @@ const LandingPage = () => {
     <>
     <div>
       <div className="landingPage__container">
+    <img className="landingPage__img1" src={Lettuce} alt="background"/>
         <img src={Logo1} alt="logo" className="landingPage__img" />
       </div>
       
-    <img className="landingPage__img1" src={Lettuce} alt="background"/>
 
 
       <div className="landingPage__div">
