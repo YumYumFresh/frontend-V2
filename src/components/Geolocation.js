@@ -1,5 +1,4 @@
 import axios from "axios";
-import Card from "./Cards";
 import React, { useEffect, useState } from "react";
 import "../css/geolocation.css";
 
@@ -24,7 +23,10 @@ const Geolocation = (props) => {
     // Window.sessionStorage("userMonth", month);
     // Window.sessionStorage("month", props.monthLookup(month));
     showPosition();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.reloadGeolocation]);
+
+  console.log(location, statess, zipCode, month)
 
   function showPosition() {
     // Store the element where the page displays the result

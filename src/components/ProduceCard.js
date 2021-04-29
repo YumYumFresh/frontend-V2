@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Col from "react-bootstrap/esm/Col";
-import Row from "react-bootstrap/esm/Row";
 import ReactCardFlip from "react-card-flip";
 import BackOfCard from "./BackOfCard";
 import FrontOfCard from "./FrontOfCard";
-import CardDeck from "react-bootstrap/CardDeck";
+
 
 const ProduceCard = ({ prod }) => {
   const [isFlipped, setIsFlipped] = useState(false);

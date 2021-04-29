@@ -23,7 +23,7 @@ const MarketCard = ({ id, marketName}) => {
         setMarketSchedule(response.data.marketdetails.Schedule);
         console.log(response.data.marketdetails.Schedule);
       });
-  }, []);
+  }, [link]);
 
   return (
     <Card style={{margin:"3%"}}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "../css/modal.css";
@@ -12,7 +12,7 @@ import Col from "react-bootstrap/esm/Col";
 // monthLookup = { monthLookup };
 
 const MonthsModals = (props) => {
-  const [monthSelect, setMonthSelect] = useState();
+  
 
   const handleMonthSelect = (month) => {
     sessionStorage.setItem("month", month);

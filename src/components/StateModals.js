@@ -16,6 +16,8 @@ const StateModals = (props) => {
     reverseStateIds[stateIdsIndexes[i]] = stateIdsNames[i];
   }
 
+  console.log(stateSelect)
+
   function handleStateSelect(selection, stateId) {
     sessionStorage.setItem("usersState", selection);
     sessionStorage.setItem("userStateId", stateId);

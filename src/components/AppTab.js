@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import FarmersMarket from "./FarmersMarket";
-import Modals from "./Modals";
 import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";

@@ -1,11 +1,10 @@
 import React from "react";
 import Navbar from "react-bootstrap/esm/Navbar";
 import "../css/footer.css";
-import Fruit from "../images/fruit.PNG";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
-import RealLogo from "../images/realLogo.png";
+
 
 const Footer = () => {
   return (
