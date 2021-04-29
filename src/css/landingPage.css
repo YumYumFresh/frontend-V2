@@ -6,8 +6,8 @@
   margin-left: -200px;
 }
 .landingPage__img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   border-radius: 70%;
   box-shadow: -10px 22px 30px 2px grey;
   background-color: white;
@@ -15,7 +15,6 @@
 .landingPage__img1 {
   height: 100vh;
   width: 100vw;
-  background-image: url("../images/lettuces.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
