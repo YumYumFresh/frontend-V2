@@ -15,6 +15,9 @@
 .landingPage__img1 {
   height: 100vh;
   width: 100vw;
+  background-image: url("../images/lettuces.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .landingPage__div {
