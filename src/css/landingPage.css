@@ -2,8 +2,8 @@
   position: fixed;
   top: 50%;
   left: 46%;
-  margin-top: -300px;
-  margin-left: -200px;
+  /* margin-top: -300px;
+  margin-left: -200px; */
 }
 .landingPage__img {
   width: 100%;
