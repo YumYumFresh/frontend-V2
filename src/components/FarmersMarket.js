@@ -41,10 +41,23 @@ const FarmersMarket = () => {
               : "enter your zip"
           }
           onChange={handleChange}
-          style={{ padding: "5%", width: "100%", borderRadius:"20px", fontSize:"125%", textDecoration:"none",  outline:"none" }}
+          style={{
+            padding: "5%",
+            width: "100%",
+            borderRadius: "20px",
+            fontSize: "125%",
+            textDecoration: "none",
+            outline: "none",
+          }}
         />
         <div>
-        <button type="submit" style={{marginBotttom:"30px", marginRight:"100px"}}> find farm</button>
+          <button
+            type="submit"
+            style={{ marginBotttom: "30px", marginRight: "100px" }}
+          >
+            {" "}
+            find farm
+          </button>
         </div>
       </form>
       {markets
