@@ -6,7 +6,6 @@ import "../css/landingPage.css";
 
 const LandingPage = () => {
   return (
-    <>
       <div className="tacos">
         <div className="landingPage__container">
           <img src={Logo1} alt="logo" className="landingPage__img" />
@@ -18,7 +17,6 @@ const LandingPage = () => {
           </Link>
         </div>
         </div>
-    </>
   );
 };
 
