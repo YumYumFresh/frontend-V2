@@ -4,27 +4,24 @@ import Logo2 from "../images/fakeLogo2.png";
 import App from "../App";
 import { Link } from "react-router-dom";
 import "../css/landingPage.css";
-import Lettuce from "../images/lettuces.png"
+import Lettuce from "../images/lettuces.png";
 
 const LandingPage = () => {
   return (
     <>
-    <div className="landingPage__img1" style={{background:"../images/lettuces.png"}}>
-      <div className="landingPage__container">
-        <img src={Logo1} alt="logo" className="landingPage__img" />
-      </div>
-      
+      <div className="landingPage__img1">
+        <div className="landingPage__container">
+          <img src={Logo1} alt="logo" className="landingPage__img" />
+        </div>
 
-
-      <div className="landingPage__div">
-        <Link to="/yumyum" className="landingPage__link">
-          Click to find produce in your location.
-        </Link>
+        <div className="landingPage__div">
+          <Link to="/yumyum" className="landingPage__link">
+            Click to find produce in your location.
+          </Link>
+        </div>
       </div>
-    </div>
     </>
   );
 };
 
 export default LandingPage;
-
