@@ -6,25 +6,27 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-
-.footer__img {
-  border-radius: 50%;
-  width: 5%;
-  height: 5%;
+.footer__div{
+  margin:1%;
+  
 }
 
 .footer__icons {
   color: white;
-  margin: 3%;
+  margin: 5%;
   font-size: 100%;
+  
 }
 
 .footer__a {
-  margin-left: 70%;
   color: white;
   font-family: "The Farmer Textured";
+ 
 }
 
 .footer__text {
@@ -33,5 +35,31 @@
 
 .footer__fontLogo {
   font-family: "The Farmer Textured";
-  margin-left: 1%;
+  margin-left: 6%;
+  color: white;
+ 
+  
 }
+
+/* .navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+} */
+
+/* .navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+} */

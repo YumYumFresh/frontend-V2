@@ -1,10 +1,9 @@
-
 .header__container {
   margin-top: 0;
   margin-left: 300px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .header__container {
     margin-top: 0;
     margin-left: 0px;
