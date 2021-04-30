@@ -9,6 +9,9 @@
   }
 }
 
+.app__extraSpace{
+  height: 1px;
+}
 
 .app__content {
   margin: 2%;
