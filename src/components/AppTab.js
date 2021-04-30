@@ -90,7 +90,7 @@ const AppTab = () => {
   };
 
   return (
-    <div className="app__mainDiv">
+    <div >
       <DisplaySelection />
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>

@@ -1,57 +1,67 @@
 .tab__container {
 }
 
-.tab__hr{
-    border: 1px solid#076321ff;
-    width:100%;
-    opacity: 1.0;
+.tab__hr {
+  border: 1px solid#076321ff;
+  width: 100%;
+  opacity: 1;
 }
 
-.tab__link{
-    background-color: #52154eff;
-    color: white;
-    border-radius: 20px;
-   
+.tab__link {
+  background-color: #52154eff;
+  color: white;
+  border-radius: 20px;
 }
 /* 
 .tab__link:active{
     color: black;
     background-color: #C6E0FF;
 } */
-.tab__link:hover{
-    color: #52154eff;
-    background-color: white;
-    border: 1px solid grey;
+.tab__link:hover {
+  color: #52154eff;
+  background-color: white;
+  border: 1px solid grey;
 }
 
 #menu-toggle {
-    display: none;
+  display: none;
 }
 
 #menu {
-    width: 190px;
-    overflow: hidden;
-    max-height: 0;
-    padding: 0;
-    margin: 0 auto;
-    -webkit-transition: all 0.3s ease;
+  width: 190px;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
 }
 
 #menu-toggle:checked + #menu {
-    max-height: 500px;
+  max-height: 500px;
 }
 
-div#left-tabs-example-tabpane-first{
-    background-color: #ffaa27ff;
-    border-radius: 20px;
-    width: 1095px;
+div#left-tabs-example-tabpane-first {
+  background-color: #ffaa27ff;
+  border-radius: 20px;
+  width: 1095px;
 }
 
-label{
-    background-color: #ffaa27;
-    font-family: "The Farmer Textured";
-    font-size: 45px;
-    border-radius: 50px;
-    width: 240px;
-    text-align: center;    
+label {
+  box-shadow: -10px 10px 15px 1px grey;
+  background-color: #ffaa27;
+  font-family: "The Farmer Textured";
+  font-size: 45px;
+  border-radius: 50px;
+  width: 240px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    box-shadow: -10px 10px 15px 1px grey;
+    font-size: 36px;
+    margin: -10%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+  }
 }
