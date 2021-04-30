@@ -3,28 +3,95 @@
 .navBar__container {
   background-color: #ffaa27;
   box-shadow: 10px 10px 30px 5px grey;
-  /* position: fixed; */
   width: 100%;
+  position: static;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  padding: .5rem 1rem;
   
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar__container{
+    background-color: #ffaa27;
+  box-shadow: 10px 10px 30px 5px grey;
+  width: 100%;
+  position: static;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  padding: .5rem 1rem;  
+  }
 }
 
 #navBar__img {
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 50%;
   margin-left: 50px;
   max-height: 300px;
   max-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  #navBar__img{
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    
+  }
 }
 
 .navbar__header {
   position: relative;
 }
 
-.navBar__h1 {
-  color: white;
-  display: inline;
-  font-family: "The Farmer Textured";
-  font-size: 100px;
-  
+@media only screen and (max-width: 600px) {
+  .navbar__header{
+    position: relative;
+  }
 }
+
+
+/* .navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.navbar-expand-lg {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+} */
+
+
+/* .navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+} */
