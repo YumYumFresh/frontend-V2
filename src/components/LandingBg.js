@@ -8,7 +8,7 @@ const LandingBg = () => {
       style={{
         backgroundImage:
           "url(https://www.thesimpledollar.com/wp-content/uploads/2020/04/TheSimpleDollar-Fun-With-Friends.png)",
-        height: "880px",
+        height: "1000px",
         width: "1920px",
         objectFit: "contain",
         position: "fixed",
