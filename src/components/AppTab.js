@@ -190,7 +190,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="fourth" style={{width:"150px"}} >
+              <Tab.Pane eventKey="fourth" >
                 <FarmersMarket />
               </Tab.Pane>
             </Tab.Content>

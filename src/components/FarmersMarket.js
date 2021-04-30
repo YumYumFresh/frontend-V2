@@ -29,6 +29,7 @@ const FarmersMarket = () => {
   };
 
   return (
+    <>
     <div className="farmersMarket__div">
       <form onSubmit={handleSubmit}>
         <input
@@ -53,11 +54,12 @@ const FarmersMarket = () => {
         <div>
           <button
             type="submit"
-            style={{ marginBotttom: "30px", marginRight: "100px" }}
+            className="farmers__button"
           >
             {" "}
             find farm
           </button>
+      <div className="farmersMarket__extraSpace"></div>
         </div>
       </form>
       {markets
@@ -70,6 +72,7 @@ const FarmersMarket = () => {
           ))
         : "No Markets, Womp-Womp"}
     </div>
+  </>
   );
 };
 

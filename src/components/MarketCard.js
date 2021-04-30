@@ -29,7 +29,7 @@ const MarketCard = ({ id, marketName}) => {
     <Card style={{margin:"3%"}}>
       <Card.Body>
         <div className="marketCard__a">
-            <a href={marketLink} style={{textDecoration:"none", color:'white'}} target="_blank" rel="noreferrer" className="marketCard__link">
+            <a href={marketLink} target="_blank" rel="noreferrer" className="marketCard__link">
               Map It!
             </a>
         </div>

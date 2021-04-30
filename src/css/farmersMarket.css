@@ -7,3 +7,29 @@
     border-radius: 20px;
     font-size: x-large;
 }
+
+.farmers__button{
+    width:150px;
+    margin-top: 50%;
+    margin-bottom: 80px; 
+    margin-right: 100px;
+}
+
+.farmersMarket__extraSpace{
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .farmersMarket__div{
+       width: 300px;
+    }
+
+    .farmers__button{
+        width:150px;
+        margin-bottom: 20px; 
+        margin-right: 0px !important;
+        
+    }
+    
+}
