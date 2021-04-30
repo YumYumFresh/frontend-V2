@@ -140,9 +140,10 @@ const AppTab = () => {
               <hr className="tab__hr" />
             </Nav>
           </Col>
+
           <Col lg={10}>
-            <Tab.Content>
-              <Tab.Pane eventKey="first" >
+            <Tab.Content >
+              <Tab.Pane eventKey="first" style={{width:"150px"}}>
                 <Geolocation
                   reloadGeolocation={reloadGeolocation}
                   monthLookup={monthLookup}
@@ -157,7 +158,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="second" >
+              <Tab.Pane eventKey="second" style={{width:"150px"}} >
                 <br />
                 <StateModals
                   stateIds={stateIds}
@@ -173,7 +174,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="third" >
+              <Tab.Pane eventKey="third" style={{width:"150px"}} >
                 <br />
                 <MonthsModals
                   monthsModalShow={monthsModalShow}
@@ -189,7 +190,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="fourth" >
+              <Tab.Pane eventKey="fourth" style={{width:"150px"}} >
                 <FarmersMarket />
               </Tab.Pane>
             </Tab.Content>

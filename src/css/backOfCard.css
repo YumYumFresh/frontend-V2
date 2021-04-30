@@ -1,3 +1,33 @@
+.backOfCard__container{
+    height: fit-content;
+    width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    .backOfCard__disabled{   
+        font-size: 20px;
+        margin: 0;
+        
+     }
+     .backOfCard__enabled{
+        font-size: 20px;  
+        margin: 0;
+        border: 2px solid #3fb500ff;  
+       
+       
+    }
+    .backOfCard__div{
+        width: 300px !important;
+        
+        
+    }
+    .backOfCard__container{
+        height: fit-content;
+        width: fit-content;
+    }
+  }
+
+
 .backOfCard__enabled{
     border: 2px solid #3fb500ff;  
     
@@ -10,9 +40,10 @@
 
 .backOfCard__div{
     background-color: white;
-    margin: 10%;
-    height:70%;
-    width: 70%;
+   
+    height:fit-content;
+    width: 400px;
+   
 }
 
 .backOfCard__monthDiv{   

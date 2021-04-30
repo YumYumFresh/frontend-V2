@@ -69,7 +69,7 @@ const Geolocation = (props) => {
         props.fire();
       })
 
-      .catch((error) => console.log(error));
+      .catch((error) => alert("geolocation is currently down, please choose state and month from menu."));
   }
 
   function errorCallback(error) {

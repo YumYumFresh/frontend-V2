@@ -6,7 +6,6 @@ const FrontOfCard = ({ click, prod }) => {
   return (
     <Card
       className="frontOfCard__card"
-      style={{ height: "fitContent", width: 400 }}
     >
       <Card.Img
         variant="top"
