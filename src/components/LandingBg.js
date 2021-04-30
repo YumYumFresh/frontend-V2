@@ -6,6 +6,7 @@ import Lettuce from "../images/lettuces.png"
 const LandingBg = () => {
   return (
     <div
+    className="tacos"
       style={{
         backgroundImage:
           `url(${Lettuce})`,

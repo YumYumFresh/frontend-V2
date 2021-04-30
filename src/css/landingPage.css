@@ -13,6 +13,13 @@
   margin-top: -300px;
   margin-left: -200px;
 }
+@media only screen and (max-width: 600px){
+  .tacos{
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .landingPage__img {
