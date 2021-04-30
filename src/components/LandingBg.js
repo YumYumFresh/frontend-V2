@@ -7,7 +7,9 @@ const LandingBg = () => {
     <div
       style={{
         backgroundImage:
-          "url(https://www.thesimpledollar.com/wp-content/uploads/2020/04/TheSimpleDollar-Fun-With-Friends.png)",
+          "url(https://c0.wallpaperflare.com/preview/257/842/322/salad-lettuce-green-salad-iceberg-lettuce.jpg)",
+        backgroundRepeat:"no-repeat",
+        backgroundSize:"cover",
         height: "1000px",
         width: "1920px",
         objectFit: "contain",

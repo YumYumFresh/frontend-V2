@@ -16,7 +16,7 @@ const LandingPage = () => {
       </div>
       <div className="landingPage__div">
         <Link to="/yumyum" className="landingPage__link">
-          Click to find produce in your location.
+         Find produce in your location.
         </Link>
       </div>
     </>
