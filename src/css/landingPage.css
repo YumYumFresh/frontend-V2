@@ -9,6 +9,11 @@
   border-radius: 70%;
   box-shadow: -10px 22px 30px 2px grey;
   background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 46%;
+  margin-top: -300px;
+  margin-left: -200px;
 }
 
 

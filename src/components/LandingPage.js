@@ -12,13 +12,6 @@ const LandingPage = () => {
           src={Logo1}
           alt="logo"
           className="landingPage__img"
-          style={{
-            position: "fixed",
-            top: "50%",
-            left: "46%",
-            marginTop: "-300px",
-            marginLeft: "-200px",
-          }}
         />
       </div>
       <div className="landingPage__div">
