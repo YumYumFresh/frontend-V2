@@ -9,8 +9,7 @@ import { FiTwitter } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className="footer__container">
-      <Navbar expand="lg" variant="dark">
-        
+      <Navbar expand="lg" variant="dark"> 
         <Navbar.Brand className="footer__fontLogo" href="/">
           Yum-Yum Fresh
           <AiOutlineFacebook className="footer__icons" />

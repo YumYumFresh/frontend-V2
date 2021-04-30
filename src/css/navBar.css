@@ -39,9 +39,11 @@
   border-radius: 50%;
   width: 60%;
   height: 50%;
+  background-color: #fff8fa;
   margin-left: 50px;
   max-height: 300px;
   max-width: 300px;
+  box-shadow: -2px 5px 10px 5px rgb(196, 152, 8);
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,7 +51,7 @@
     border-radius: 50%;
     width: 40%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 29%;
     
   }
 }

@@ -7,13 +7,6 @@ import "../css/header.css";
 const header = () => {
   return (
     <div className="header__container">
-      <Row>
-        <Col xs={6} lg={2}>
-          <div>
-            {/* <img src={Logo1} alt="logo" className="header__img" /> */}
-          </div>
-        </Col>
-        <Col xs={6} lg={10}>
           <div className="header__header">
             <h1>About</h1>
           </div>
@@ -31,8 +24,6 @@ const header = () => {
               an eco-system of growth, sustainability, and opportunity.
             </p>
           </div>
-        </Col>
-      </Row>
     </div>
   );
 };
