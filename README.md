@@ -8,7 +8,7 @@ requires react 17.0.2
 
 Download repo and run npm install to install all npm package dependencies.
 
-the <geolocation> component makes a call to the [positionstack api](https://positionstack.com/). We put the API key for positionstack in an environment variable named REACT_APP_API_KEY. We only use it in the <geolocation> component
+the geolocation component makes a call to the [positionstack api](https://positionstack.com/). We put the API key for positionstack in an environment variable named REACT_APP_API_KEY. We only use it in the geolocation component
 
 Current hot issue: Fix CSS across site
 
