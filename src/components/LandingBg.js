@@ -1,13 +1,14 @@
 import React from "react";
 import LandingPage from "./LandingPage";
 import "../css/landingPage.css";
+import Lettuce from "../images/lettuces.png"
 
 const LandingBg = () => {
   return (
     <div
       style={{
         backgroundImage:
-          "url(https://c0.wallpaperflare.com/preview/257/842/322/salad-lettuce-green-salad-iceberg-lettuce.jpg)",
+          `url(${Lettuce})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "1080px",
