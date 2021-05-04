@@ -13,8 +13,8 @@
   margin-top: -300px;
   margin-left: -200px;
 }
-@media only screen and (max-width: 600px){
-  .tacos{
+@media only screen and (max-width: 600px) {
+  .tacos {
     background-size: contain;
     width: 100px;
     height: 100px;
@@ -27,7 +27,7 @@
     height: 350px;
     left: 0px;
     margin-left: 10px;
-    box-shadow: -1px 2px 30px 1px lightgrey
+    box-shadow: -1px 2px 30px 1px lightgrey;
   }
 }
 
@@ -51,7 +51,7 @@
     width: 300px;
     left: 9%;
     text-align: center;
-    box-shadow: -1px 2px 30px 1px lightgrey
+    box-shadow: -1px 2px 30px 1px lightgrey;
   }
 }
 
@@ -64,8 +64,6 @@
 @media only screen and (max-width: 600px) {
   .landingPage__link {
     margin-left: 0px;
-    
-    
   }
 }
 
