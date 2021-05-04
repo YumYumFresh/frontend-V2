@@ -50,6 +50,7 @@
     position: fixed;
     margin-left: 10px;
     border-radius: 70%;
+    top: 500px;
     box-shadow: -4px 2px 40px 1px #adc0b2;
 }
 
@@ -70,7 +71,5 @@
     margin-left: 0px;
     color: #fff8fa;
   }
-  .landingPage__container{
-    
-  }
+  
 }
