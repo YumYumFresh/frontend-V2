@@ -40,16 +40,14 @@
 
 @media only screen and (max-width: 600px) {
   .LandingBg__div {
-    background-size: contain;
-    width: 100px;
-    height: 100px;
+    background-size: auto;
   }
   
   .landingPage__img {
     width: 350px;
     height: 350px;
     left: 0px;
-    top: 65%;
+    top: 61%;
     margin-left: 10px;
     border-radius: 70%;
     box-shadow: -4px 2px 40px 1px #adc0b2;
