@@ -1,5 +1,4 @@
 import React from "react";
-import Logo1 from "../images/realLogo.png";
 import { Link } from "react-router-dom";
 import "../css/landingPage.css";
 import Lettuce from "../images/YYFLogoMain.png";
