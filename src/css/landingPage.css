@@ -48,6 +48,7 @@
     left: 0px;
     top: 60%;
     margin-left: 10px;
+    border-radius: 70%;
     box-shadow: -4px 2px 40px 1px #adc0b2;
   }
   .landingPage__mobile div {
