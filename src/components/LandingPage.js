@@ -11,7 +11,7 @@ const LandingPage = () => {
       
     </div>
       <div className="landingPage__container">
-        <img src={Lettuce} alt="logo" className="landingPage__img" />
+        <img src={Lettuce} alt="logo" className="landingPage__img" style={{ borderRadius: "70%"}} />
       </div>
       <div className="landingPage__mobile">
       <div className="landingPage__div">
