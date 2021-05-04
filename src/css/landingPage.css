@@ -3,7 +3,6 @@
 .landingPage__img {
   width: 500px;
   height: 500px;
- 
   box-shadow: -10px 22px 30px 2px grey;
   background-color: white;
   position: fixed;
@@ -50,7 +49,7 @@
     position: fixed;
     margin-left: 10px;
     border-radius: 70%;
-    top: 90px;
+    top: 80px;
     box-shadow: -4px 2px 40px 1px #adc0b2;
 }
 
