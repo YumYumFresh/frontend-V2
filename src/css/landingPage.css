@@ -61,6 +61,9 @@
     text-align: center;
     box-shadow: -1px 2px 30px 1px lightgrey;
   }
+  .landingPage__div:hover {
+    text-decoration: none;
+  }
   .landingPage__link {
     margin-left: 0px;
     color: #fff8fa;
