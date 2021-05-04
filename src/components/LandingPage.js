@@ -7,7 +7,7 @@ import "../css/landingPage.css";
 const LandingPage = () => {
   return (
     <>
-      <div>
+      <div className="landingPage__container">
         <img src={Logo1} alt="logo" className="landingPage__img" />
       </div>
       <div className="landingPage__mobile">

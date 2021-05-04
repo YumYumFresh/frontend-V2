@@ -1,3 +1,5 @@
+
+
 .landingPage__img {
   width: 500px;
   height: 500px;
@@ -67,5 +69,8 @@
   .landingPage__link {
     margin-left: 0px;
     color: #fff8fa;
+  }
+  .landingPage__container{
+    margin-top: 5%;
   }
 }
