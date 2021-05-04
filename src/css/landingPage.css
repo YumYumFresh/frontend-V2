@@ -47,7 +47,7 @@
     width: 350px;
     height: 350px;
     left: 0px;
-   
+    position: fixed;
     margin-left: 10px;
     border-radius: 70%;
     box-shadow: -4px 2px 40px 1px #adc0b2;
