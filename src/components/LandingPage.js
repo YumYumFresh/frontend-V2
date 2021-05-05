@@ -12,7 +12,7 @@ const LandingPage = () => {
           src={Lettuce}
           alt="logo"
           className="landingPage__img"
-          style={{ borderRadius: "70%", marginLeft: "36%", marginTop: "4%" }}
+          style={{ borderRadius: "70%", marginLeft: "36%", marginTop: "1%" }}
         />
       </div>
       <div className="landingPage__mobile">
