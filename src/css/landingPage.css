@@ -16,20 +16,20 @@
   margin-left: -260px;
   padding: 2%;
   width: 25%;
-  background-color: #fef8fa;
+  background-color: #be1599;
   border-radius: 20px;
   font-size: x-large;
   box-shadow: -5px 10px 20px 2px grey;
 }
 
 .landingPage__link {
-  color: black;
+  color: white;
   text-decoration: none;
   margin-left: 50px;
 }
 
 .landingPage__link:hover {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
     border-radius: 70%;
     top: 60px;
     box-shadow: -4px 2px 40px 1px #adc0b2;
-    left: -15% !important;
+    left: -25% !important;
 }
 
   .landingPage__mobile div {
