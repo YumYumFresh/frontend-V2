@@ -43,9 +43,10 @@
     height: 350px;
     position: fixed;
     border-radius: 70%;
-    top: 80px;
+    top: 60px;
     box-shadow: -4px 2px 40px 1px #adc0b2;
-  }
+    left: -15% !important;
+}
 
   .landingPage__mobile div {
     background-color: #be1599;
