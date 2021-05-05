@@ -71,7 +71,7 @@
 }
 
 @media only screen and (min-width: 1900px){
-  .landingPage__img {
+  .landingPage__container {
     top: 200px;
     
   }
