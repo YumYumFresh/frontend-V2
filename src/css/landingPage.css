@@ -29,43 +29,49 @@
 .landingPage__link:hover {
   color: #fff8fa;
   text-decoration: none;
+  font-size: xx-large;
+}
+
+.mainDiv {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*cellphone*/
 @media only screen and (max-width: 600px) {
-  .LandingBg__div {
+  /* .LandingBg__div {
     background-size: auto;
     width: auto;
     max-width: 100%;
     height: auto;
-  }
+  } */
+  
 
   .landingPage__img {
-    width: 350px;
-    height: 350px;
-    position: fixed;
+    width: 85%;
+    height: auto;
     border-radius: 70%;
-    top: 60px;
     box-shadow: -4px 2px 40px 1px #adc0b2;
-    left: -32% !important;
   }
 
   .landingPage__mobile div {
     background-color: #be1599;
   }
   .landingPage__div {
-    margin-left: 0px;
-    width: 300px;
-    left: 12%;
+    width: 75%;
     text-align: center;
-    box-shadow: -1px 2px 30px 1px lightgrey;
   }
+
   .landingPage__div:hover {
     text-decoration: none;
-  }
-  .landingPage__link {
-    margin-left: 0px;
-    color: #fff8fa;
   }
 }
 
