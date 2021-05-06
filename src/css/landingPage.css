@@ -1,35 +1,27 @@
 .landingPage__img {
   width: 500px;
   height: 500px;
+  margin: 50px;
+  border-radius: 70%;
   box-shadow: -10px 22px 30px 2px grey;
-  background-color: white;
-  position: fixed;
-  top: 50%;
-  left: 46%;
 }
 
 .landingPage__div {
-  position: fixed;
-  top: 95%;
-  left: 50%;
-  margin-top: -160px;
-  margin-left: -260px;
   padding: 2%;
-  width: 25%;
   background-color: #be1599;
   border-radius: 20px;
   font-size: x-large;
   box-shadow: -5px 10px 20px 2px grey;
+  font-family: "The Farmer Textured";
 }
 
 .landingPage__link {
-  color: white;
+  color: #fff8fa;
   text-decoration: none;
-  margin-left: 50px;
 }
 
 .landingPage__link:hover {
-  color: white;
+  color: #fff8fa;
   text-decoration: none;
 }
 

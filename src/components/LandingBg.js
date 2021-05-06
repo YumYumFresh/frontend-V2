@@ -18,7 +18,7 @@ const LandingBg = () => {
         position: "fixed",
       }}
     >
-      <LandingPage />
+      {/* <LandingPage /> */}
     </div>
   );
 };
