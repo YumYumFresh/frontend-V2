@@ -3,8 +3,14 @@
   background-size: auto;
   margin-bottom: -20%;
 }
-.app__mainDiv {
-  padding: 2%;
+@media only screen and (max-width: 600px) {
+  .App {
+   
+  }
+}
+
+.app__extraSpace{
+  height: 1px;
 }
 
 .app__content {
@@ -14,8 +20,7 @@
   padding: 1%;
 }
 
-.app_border {
-}
+
 
 /* <div
   class="react-card-flipper"

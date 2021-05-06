@@ -1,5 +1,4 @@
 import axios from "axios";
-import Card from "./Cards";
 import React, { useEffect, useState } from "react";
 import "../css/geolocation.css";
 
@@ -24,7 +23,10 @@ const Geolocation = (props) => {
     // Window.sessionStorage("userMonth", month);
     // Window.sessionStorage("month", props.monthLookup(month));
     showPosition();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.reloadGeolocation]);
+
+  console.log(location, statess, zipCode, month)
 
   function showPosition() {
     // Store the element where the page displays the result
@@ -47,7 +49,7 @@ const Geolocation = (props) => {
 
     axios
       .get(
-        `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
+        `https://api.positionstack.com/v1/reverse?access_key=${key}&query=${lat},${long}`
       )
       .then((res) => {
         setStatess(res.data.data[0].region);
@@ -67,7 +69,7 @@ const Geolocation = (props) => {
         props.fire();
       })
 
-      .catch((error) => console.log(error));
+      .catch((error) => alert("geolocation is currently down, please choose state and month from menu."));
   }
 
   function errorCallback(error) {

@@ -23,11 +23,11 @@ const BackOfCard = ({ click, prodBack, prod }) => {
   const monthsInSeason = prodBack[0].months;
 
   return (
-    <Card style={{ height: "fitContent", width: 400 }}>
-      <Card.Body style={{ overflow: "overlay", height: 600 }}>
+    <Card className="backOfCard__container">
+      <Card.Body style={{ overflow: "overlay", height: 700}}>
         <div
           className="backOfCard__div"
-          style={{ height: "fitContent", width: 300 }}
+          
         >
           <h1>{prod.name}</h1>
           <h3>Available In:</h3>

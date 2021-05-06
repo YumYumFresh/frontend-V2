@@ -1,13 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/esm/Card";
-import Logo2 from "../images/fakeLogo1.png";
 import "../css/frontOfCard.css";
 
 const FrontOfCard = ({ click, prod }) => {
   return (
     <Card
       className="frontOfCard__card"
-      style={{ height: "fitContent", width: 400 }}
     >
       <Card.Img
         variant="top"

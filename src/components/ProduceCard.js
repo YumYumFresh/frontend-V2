@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Col from "react-bootstrap/esm/Col";
-import Row from "react-bootstrap/esm/Row";
 import ReactCardFlip from "react-card-flip";
 import BackOfCard from "./BackOfCard";
 import FrontOfCard from "./FrontOfCard";
-import CardDeck from "react-bootstrap/CardDeck";
+
 
 const ProduceCard = ({ prod }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -21,7 +19,7 @@ const ProduceCard = ({ prod }) => {
         key="front"
         click={handleClick}
         prod={prod}
-        style={{ width: 20 }}
+        style={{width:"100px"}}
       >
         .
       </FrontOfCard>
@@ -30,6 +28,7 @@ const ProduceCard = ({ prod }) => {
         click={handleClick}
         prodBack={prod.only_associated_harvest}
         prod={prod}
+        style={{width:"100px"}}
         >
         .
       </BackOfCard>

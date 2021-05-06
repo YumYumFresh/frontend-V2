@@ -5,12 +5,20 @@
 
 .frontOfCard__card {
   margin: 10%;
-  height: 100%;
-  width: 50%;
+  height: fit-content;
+  width: 400px;
   min-width: 30%;
   min-height: fit-content;
   font-size: large;
 }
+
+@media only screen and (max-width: 600px) {
+  .frontOfCard__card {
+   width: 300px;
+   margin-left: 1%;
+  }
+}
+
 /* .react-card-front {
   width: 30%;
   height: fit-content;

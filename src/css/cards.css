@@ -1,9 +1,22 @@
 .cards__div {
   display: flex;
-  margin-bottom: 10%; 
-  flex-wrap: wrap; 
+  margin-bottom: 10%;
+  flex-wrap: wrap;
   flex-direction: row;
   background-color: #ffaa27ff;
   border-radius: 20px;
   width: 1095px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards__div {
+      /* display: grid; */
+      /* grid-template-columns: auto auto auto auto; */
+      margin-bottom: 10%;
+      background-color: #ffaa27ff;
+      border-radius: 20px;
+      width: 370px;
+      flex-direction: column;
+      align-content: center;
+  }
 }

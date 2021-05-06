@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import FarmersMarket from "./FarmersMarket";
-import Modals from "./Modals";
 import MonthsModals from "./MonthsModals";
 import StateModals from "./StateModals";
 import Geolocation from "./Geolocation";
@@ -91,7 +90,7 @@ const AppTab = () => {
   };
 
   return (
-    <div className="app__mainDiv">
+    <div >
       <DisplaySelection />
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
@@ -141,9 +140,10 @@ const AppTab = () => {
               <hr className="tab__hr" />
             </Nav>
           </Col>
+
           <Col lg={10}>
-            <Tab.Content>
-              <Tab.Pane eventKey="first" >
+            <Tab.Content >
+              <Tab.Pane eventKey="first" style={{width:"150px"}}>
                 <Geolocation
                   reloadGeolocation={reloadGeolocation}
                   monthLookup={monthLookup}
@@ -158,7 +158,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="second" >
+              <Tab.Pane eventKey="second" style={{width:"150px"}} >
                 <br />
                 <StateModals
                   stateIds={stateIds}
@@ -174,7 +174,7 @@ const AppTab = () => {
                   monthLookup={monthLookup}
                 />
               </Tab.Pane>
-              <Tab.Pane eventKey="third" >
+              <Tab.Pane eventKey="third" style={{width:"150px"}} >
                 <br />
                 <MonthsModals
                   monthsModalShow={monthsModalShow}

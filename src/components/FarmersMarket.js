@@ -29,6 +29,7 @@ const FarmersMarket = () => {
   };
 
   return (
+    <>
     <div className="farmersMarket__div">
       <form onSubmit={handleSubmit}>
         <input
@@ -41,10 +42,24 @@ const FarmersMarket = () => {
               : "enter your zip"
           }
           onChange={handleChange}
-          style={{ padding: "5%", width: "100%", borderRadius:"20px", fontSize:"125%", textDecoration:"none",  outline:"none" }}
+          style={{
+            padding: "5%",
+            width: "100%",
+            borderRadius: "20px",
+            fontSize: "125%",
+            textDecoration: "none",
+            outline: "none",
+          }}
         />
         <div>
-        <button type="submit" style={{marginBotttom:"30px", marginRight:"100px"}}> find farm</button>
+          <button
+            type="submit"
+            className="farmers__button"
+          >
+            {" "}
+            find farm
+          </button>
+      <div className="farmersMarket__extraSpace"></div>
         </div>
       </form>
       {markets
@@ -57,6 +72,7 @@ const FarmersMarket = () => {
           ))
         : "No Markets, Womp-Womp"}
     </div>
+  </>
   );
 };
 

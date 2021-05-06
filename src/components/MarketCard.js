@@ -23,13 +23,13 @@ const MarketCard = ({ id, marketName}) => {
         setMarketSchedule(response.data.marketdetails.Schedule);
         console.log(response.data.marketdetails.Schedule);
       });
-  }, []);
+  }, [link]);
 
   return (
     <Card style={{margin:"3%"}}>
       <Card.Body>
         <div className="marketCard__a">
-            <a href={marketLink} style={{textDecoration:"none", color:'white'}} target="_blank" rel="noreferrer" className="marketCard__link">
+            <a href={marketLink} target="_blank" rel="noreferrer" className="marketCard__link">
               Map It!
             </a>
         </div>

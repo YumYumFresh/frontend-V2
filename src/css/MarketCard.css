@@ -2,11 +2,20 @@
   background-color: #52154eff;
   color: white;
   border-radius: 100%;
-  padding: 10%;
-  
+  padding: 7%;
+  text-decoration: none;
+  color: white;
 }
 
-.marketCard__a{
+@media only screen and (max-width: 600px) {
+  .marketCard__link {
+    margin: 1%;
+    font-size: 12px;
+    margin-left: -40px;
+  }
+}
+
+.marketCard__a {
   position: absolute;
   margin-left: 85%;
   margin-top: 1%;

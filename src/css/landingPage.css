@@ -1,20 +1,11 @@
-.landingPage__container {
+.landingPage__img {
+  width: 500px;
+  height: 500px;
+  box-shadow: -10px 22px 30px 2px grey;
+  background-color: white;
   position: fixed;
   top: 50%;
   left: 46%;
-  margin-top: -300px;
-  margin-left: -200px;
-}
-.landingPage__img {
-  width: 100%;
-  height: 100%;
-  border-radius: 70%;
-  box-shadow: -10px 22px 30px 2px grey;
-  background-color: white;
-}
-.landingPage__img1 {
-  height: 100vh;
-  width: 100vw;
 }
 
 .landingPage__div {
@@ -25,17 +16,76 @@
   margin-left: -260px;
   padding: 2%;
   width: 25%;
-  background-color: #fef8fa;
+  background-color: #be1599;
   border-radius: 20px;
   font-size: x-large;
   box-shadow: -5px 10px 20px 2px grey;
 }
 
 .landingPage__link {
-  color: black;
+  color: white;
   text-decoration: none;
+  margin-left: 50px;
 }
+
 .landingPage__link:hover {
-  color: black;
+  color: white;
   text-decoration: none;
 }
+
+/*cellphone*/
+@media only screen and (max-width: 600px) {
+  .LandingBg__div {
+    background-size: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .landingPage__img {
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    border-radius: 70%;
+    top: 60px;
+    box-shadow: -4px 2px 40px 1px #adc0b2;
+    left: -32% !important;
+  }
+
+  .landingPage__mobile div {
+    background-color: #be1599;
+  }
+  .landingPage__div {
+    margin-left: 0px;
+    width: 300px;
+    left: 12%;
+    text-align: center;
+    box-shadow: -1px 2px 30px 1px lightgrey;
+  }
+  .landingPage__div:hover {
+    text-decoration: none;
+  }
+  .landingPage__link {
+    margin-left: 0px;
+    color: #fff8fa;
+  }
+}
+
+/*fullscreen*/
+@media only screen and (min-width: 1900px){
+  .landingPage__container {
+    padding: 20px;
+    margin-top: 100px;
+  }
+}
+
+/*tablet*/
+/* @media only screen and (max-width: 1300px) and (min-width: 400px){
+  .landingPage__container {
+    top: 200px;
+    
+  }
+  .landingPage__div {
+   
+  }
+  } */

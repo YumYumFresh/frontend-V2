@@ -10,6 +10,8 @@ function App() {
       <div className="app__content">
         <AppTab />
       </div>
+      <div className="app__extraSpace">
+      </div>
       <Footer />
     </div>
   );
