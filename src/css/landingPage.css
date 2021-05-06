@@ -7,10 +7,12 @@
 }
 
 .landingPage__div {
-  padding: 2%;
+  width: 60%;
+  padding: 4%;
   background-color: #be1599;
   border-radius: 20px;
-  font-size: x-large;
+  text-align: center;
+  font-size: xx-large;
   box-shadow: -5px 10px 20px 2px grey;
   font-family: "The Farmer Textured";
 }
@@ -18,6 +20,10 @@
 .landingPage__link {
   color: #fff8fa;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingPage__link:hover {

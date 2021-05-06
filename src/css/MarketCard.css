@@ -9,6 +9,7 @@
 
 .marketCard {
   border: 6px inset #be1599;
+  margin: 3% 0% 0% 3%;
 }
 
 @media only screen and (max-width: 600px) {
