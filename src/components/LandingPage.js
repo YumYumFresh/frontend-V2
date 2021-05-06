@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import "../css/landingPage.css";
 import Logo from "../images/YYFLogoMain.png";
 import Lettuce from "../images/lettuces.png";
+import LandingBg from "./LandingBg"
 
 const LandingPage = () => {
   return (
     <>
       <div
-        style={{
+        style={{ 
           backgroundImage: `url("${Lettuce}")`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

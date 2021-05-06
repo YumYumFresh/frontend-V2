@@ -32,7 +32,7 @@ const FarmersMarket = () => {
     <>
       <div className="farmersMarket__div">
         <form className="fmForm" onSubmit={handleSubmit}>
-            <input
+          <input
             type="text"
             value={zipcode}
             defaultValue={sessionStorage.getItem("userZipCode")}
@@ -43,7 +43,6 @@ const FarmersMarket = () => {
             }
             onChange={handleChange}
             style={{
-              // padding: "5%",
               width: "45%",
               borderRadius: "10px",
               fontSize: "125%",
@@ -54,18 +53,11 @@ const FarmersMarket = () => {
               color: "#251E23"
             }}
           />
-          
-          {/* <div> */}
           <input
             type="submit"
             className="farmers__button"
             value="Find your market"
           />
-            {/* {" "}
-            find farm */}
-          {/* </button> */}
-          {/* <div className="farmersMarket__extraSpace"></div> */}
-          {/* </div> */}
         </form>
         {markets
           ? markets.map((market) => (
