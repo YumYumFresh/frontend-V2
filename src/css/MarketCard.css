@@ -1,10 +1,14 @@
 .marketCard__link {
-  background-color: #52154eff;
-  color: white;
+  background-color: #be1599;
+  color: #fff8fa;
   border-radius: 100%;
   padding: 7%;
   text-decoration: none;
-  color: white;
+  color: #fff8fa;
+}
+
+.marketCard {
+  border: 6px inset #be1599;
 }
 
 @media only screen and (max-width: 600px) {
