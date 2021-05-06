@@ -8,11 +8,12 @@
 }
 
 .tab__link {
-    background-color: #52154eff;
-    color: white;
+    background-color: #be1599;
+    color: #fff8fa;
     border-radius: 20px;
     width: -webkit-fill-available;
-    margin-right: 3px;
+    margin: 5px 3px 0px 0px;    
+    border: 2px solid #076321;
 }
 /* 
 .tab__link:active{
@@ -20,9 +21,11 @@
     background-color: #C6E0FF;
 } */
 .tab__link:hover {
-  color: #52154eff;
-  background-color: white;
-  border: 1px solid grey;
+  color: #251e23;
+  background-color: #3fb500;
+  border: 4px inset #be1599;
+  font-weight: bold;
+  font-size: larger;
 }
 
 #menu-toggle {

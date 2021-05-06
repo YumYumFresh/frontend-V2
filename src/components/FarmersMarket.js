@@ -21,7 +21,7 @@ const FarmersMarket = () => {
     axios
       .get(
         "https://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=" +
-          zipcode
+        zipcode
       )
       .then((res) => {
         setMarkets(res.data.results);
@@ -30,49 +30,54 @@ const FarmersMarket = () => {
 
   return (
     <>
-    <div className="farmersMarket__div">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={zipcode}
-          defaultValue={sessionStorage.getItem("userZipCode")}
-          placeholder={
-            sessionStorage.getItem("userZipCode")
-              ? sessionStorage.getItem("userZipCode")
-              : "enter your zip"
-          }
-          onChange={handleChange}
-          style={{
-            padding: "5%",
-            width: "100%",
-            borderRadius: "20px",
-            fontSize: "125%",
-            textDecoration: "none",
-            outline: "none",
-          }}
-        />
-        <div>
-          <button
+      <div className="farmersMarket__div">
+        <form className="fmForm" onSubmit={handleSubmit}>
+            <input
+            type="text"
+            value={zipcode}
+            defaultValue={sessionStorage.getItem("userZipCode")}
+            placeholder={
+              sessionStorage.getItem("userZipCode")
+                ? sessionStorage.getItem("userZipCode")
+                : "enter your zip code"
+            }
+            onChange={handleChange}
+            style={{
+              // padding: "5%",
+              width: "45%",
+              borderRadius: "10px",
+              fontSize: "125%",
+              textDecoration: "none",
+              outline: "none",
+              textIndent: "5px",
+              backgroundColor: "#fff8fa",
+              color: "#251E23"
+            }}
+          />
+          
+          {/* <div> */}
+          <input
             type="submit"
             className="farmers__button"
-          >
-            {" "}
-            find farm
-          </button>
-      <div className="farmersMarket__extraSpace"></div>
-        </div>
-      </form>
-      {markets
-        ? markets.map((market) => (
+            value="Find your market"
+          />
+            {/* {" "}
+            find farm */}
+          {/* </button> */}
+          {/* <div className="farmersMarket__extraSpace"></div> */}
+          {/* </div> */}
+        </form>
+        {markets
+          ? markets.map((market) => (
             <MarketCard
               key={market.id}
               id={market.id}
               marketName={market.marketname}
             />
           ))
-        : "No Markets, Womp-Womp"}
-    </div>
-  </>
+          : "No Markets, Womp-Womp"}
+      </div>
+    </>
   );
 };
 
