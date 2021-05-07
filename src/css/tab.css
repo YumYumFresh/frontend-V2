@@ -24,7 +24,7 @@
 } */
 .tab__link:hover {
   color: #251e23;
-  border: 4px inset #ffaa27;
+  /* border: 4px inset #ffaa27; */
   background-image: linear-gradient(90deg, #ffdc52 65%, #ffaa27, #be1599, #076321, #3fb500);
   /* font-size: 30px; */
 }
