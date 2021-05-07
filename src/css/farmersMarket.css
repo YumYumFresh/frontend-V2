@@ -1,23 +1,39 @@
 .farmersMarket__div{
-    margin: 5%;
-    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0% 5%;
+    padding: 3% 5%;
     box-shadow: -10px 10px 20px 1px grey;
-    background-color: white;
+    background-color: #fff8fa;
     border: none;
     border-radius: 20px;
-    font-size: x-large;
+    font-size: large;
+}
+
+.fmForm {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%; 
+  color:#fff8fa;
 }
 
 .farmers__button{
-    width:150px;
-    margin-top: 50%;
+    width: 25%;
+    margin: 0px 25px;
+    background-color: #be1599;
+    color: #fff8fa;
+    border-radius: 10px;
+    box-shadow: -10px 10px 20px 1px grey;
+    /* margin-top: 50%;
     margin-bottom: 80px; 
-    margin-right: 100px;
+    margin-right: 100px; */
 }
 
-.farmersMarket__extraSpace{
+/* .farmersMarket__extraSpace{
     height: 50px;
-}
+} */
 
 
 @media only screen and (max-width: 600px){
@@ -25,8 +41,11 @@
        width: 300px;
     }
 
+    .fmForm{
+    }
+
     .farmers__button{
-        width:150px;
+        width: 25%;
         margin-bottom: 20px; 
         margin-right: 0px !important;
         

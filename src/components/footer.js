@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer__container">
       <div className="footer__div">
         <span className="footer__fontLogo">
-          Yum-Yum Fresh
+          Yum Yum Fresh
           <a
             href="https://github.com/YumYumFresh"
             target="_blank"
@@ -23,7 +23,7 @@ const Footer = () => {
           <FiTwitter className="footer__icons" />
         </span>
         <span className="footer__a">
-          <h6>Copyright © 2021-Yum-Yum Fresh. All Rights Reserved.</h6>
+          <h6>Copyright © 2021-Yum Yum Fresh. All Rights Reserved.</h6>
         </span>
       </div>
     </div>

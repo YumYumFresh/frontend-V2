@@ -8,11 +8,14 @@
 }
 
 .tab__link {
-    background-color: #52154eff;
-    color: white;
+    background-color: #ffdc52;
+    border: 4px inset #ffaa27;
+    color: #251e23;
     border-radius: 20px;
     width: -webkit-fill-available;
-    margin-right: 3px;
+    margin: 5px 3px 0px 0px;    
+    font-family: "The Farmer Textured";
+    font-size: 25px;
 }
 /* 
 .tab__link:active{
@@ -20,9 +23,10 @@
     background-color: #C6E0FF;
 } */
 .tab__link:hover {
-  color: #52154eff;
-  background-color: white;
-  border: 1px solid grey;
+  color: #251e23;
+  /* border: 4px inset #ffaa27; */
+  background-image: linear-gradient(90deg, #ffdc52 65%, #ffaa27, #be1599, #076321, #3fb500);
+  /* font-size: 30px; */
 }
 
 #menu-toggle {
@@ -51,12 +55,13 @@ div#left-tabs-example-tabpane-first {
 label {
   box-shadow: -10px 10px 15px 1px grey;
   background-color: #ffaa27;
+  color: #251e23;
+  border: 6px inset #ffdc52;
   font-family: "The Farmer Textured";
   font-size: 45px;
-  border-radius: 50px;
-  width: 240px;
-  text-align: center;
-  margin-left: 6%;
+  border-radius: 25px;
+  width: 110%;
+  text-indent: 5%;
 }
 
 @media only screen and (max-width: 600px) {
