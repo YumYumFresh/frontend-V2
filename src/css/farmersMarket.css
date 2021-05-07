@@ -14,7 +14,7 @@
 .fmForm {
   display: flex; 
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   width: 100%; 
   color:#fff8fa;
 }
