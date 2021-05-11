@@ -12,14 +12,11 @@ const LandingPage = () => {
           backgroundImage: `url("${Lettuce}")`,
         }}>
 
-       <Link to="/yumyum" className="landingPage__link"> 
-       <div className="logo__div">
-         <img
+       <Link to="/yumyum" className="landingPage__link"> <img
           src={Logo}
           alt="logo"
           className="landingPage__img"
         />
-       </div>
           <div className="landingPage__div">
             Find produce in your location
           </div>
