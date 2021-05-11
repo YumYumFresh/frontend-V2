@@ -6,6 +6,12 @@
   box-shadow: -10px 22px 30px 2px grey;
 }
 
+.logo__div {
+  border-radius: 70%;
+  box-shadow: -10px 22px 30px 2px grey;
+
+}
+
 .landingPage__div {
   width: 60%;
   padding: 4%;
