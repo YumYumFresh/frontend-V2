@@ -1,5 +1,5 @@
 import React from "react";
-import RealLogo from "../images/YYFLogoMain.png";
+import RealLogo from "../images/YYFRoundLogo.png";
 // import RealLogo from "../images/realLogo.png";
 import Header from "../components/header";
 import "../css/navBar.css";
