@@ -8,7 +8,7 @@
 
 .logo__div {
   border-radius: 70%;
-  /* box-shadow: -10px 22px 30px 2px grey; */
+  box-shadow: -10px 22px 30px 2px grey;
 
 }
 
@@ -59,7 +59,13 @@
     max-width: 100%;
     height: auto;
   } */
-  
+  .logo__div {
+    width: 85%;
+    height: auto;
+    border-radius: 70%;
+    box-shadow: -4px 2px 40px 1px #adc0b2;
+
+  }  
 
   .landingPage__img {
     width: 85%;
