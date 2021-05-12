@@ -8,7 +8,7 @@ const navBar = () => {
   return (
     <div>
       <div className="navBar__container" expand="lg">
-        <span className="navBar__header">
+        {/* <span className="navBar__header"> */}
           <img
             src={RealLogo}
             id="navBar__img"
@@ -16,7 +16,7 @@ const navBar = () => {
             height="100"
             alt="React Bootstrap logo"
           />
-        </span>
+        {/* </span> */}
         <Header />
       </div>
     </div>
