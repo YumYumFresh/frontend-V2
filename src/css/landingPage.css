@@ -1,7 +1,7 @@
 .landingPage__img {
   width: 500px;
   height: 500px;
-  margin: 50px;
+  /* margin: 50px; */
   border-radius: 70%;
   box-shadow: -10px 22px 30px 2px grey;
 }

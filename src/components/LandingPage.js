@@ -17,6 +17,7 @@ const LandingPage = () => {
             src={Logo}
             alt="logo"
             className="landingPage__img"
+            style={{ margin: "50px" }}
           />
           <div className="landingPage__div">
             Find local produce!
