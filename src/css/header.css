@@ -1,23 +1,27 @@
 .header__container {
   margin-top: 0;
-  margin-left: 12%;
   /* box-shadow: -2px 5px 10px 5px rgb(196, 152, 8);
   margin: 2%; */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 772px) {
   .header__container {
-    margin-top: 0;
-    margin-left: 50px;
-    padding: 5%;
+    display: none;
   }
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #ffdc52;
+}
 
 .header__header {
-  color: #251e23ff;
+  color: #251e23;
+  font-family: "The Farmer Textured";
 }
 
 .header__p {
-  max-width: 1100px;
+  max-width: 650px;
 }

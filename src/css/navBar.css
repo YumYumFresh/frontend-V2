@@ -39,10 +39,16 @@
   width: 90%;
   height: 50%;
   background-color: #fff8fa;
-  margin-left: -30px;
-  max-height: 300px;
-  max-width: 300px;
+  /* margin-left: -30px; */
+  max-height: 250px;
+  max-width: 250px;
   box-shadow: -2px 5px 10px 5px rgb(196, 152, 8);
+}
+
+@media screen and (min-width: 601px) and (max-width: 975px) {
+  .header__p {
+    max-width: 475px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,7 +56,6 @@
     border-radius: 50%;
     width: 40%;
     height: auto;
-    margin-left: 29%;
   }
 }
 
